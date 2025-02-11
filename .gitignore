@@ -1,0 +1,37 @@
+### App
+.env
+
+### IDE
+.idea/
+/.idea
+/*.iml
+
+########################
+### App security files
+html/application/config/development/database.php
+
+########################
+### COMPOSER
+/vendor/
+!/composer.json
+composer.lock
+
+########################
+### App logs
+html/application/logs
+logs
+secure
+
+
+########################
+### Documentation
+docs
+
+########################
+### More
+html/static/img/
+html/resources/
+
+########################
+### OS
+.DS_Store
