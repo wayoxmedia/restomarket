@@ -1,7 +1,7 @@
 services:
   php-apache-environment:
     image: php:8.2-apache
-    container_name: checako
+    container_name: eglee
     build:
       context: ./
       dockerfile: docker/Dockerfile
