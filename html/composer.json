@@ -1,0 +1,36 @@
+{
+  "description": "checako.com",
+  "name": "mx/checako",
+  "type": "website",
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "git@gitlab.wayox.net:wayox-media-utilities/php-coding-standard.git"
+    },
+    {
+      "type": "vcs",
+      "url": "git@gitlab.wayox.net:wayox-media-utilities/assets.git"
+    }
+  ],
+  "require-dev": {
+    "squizlabs/php_codesniffer": "*",
+    "wayox-media-utilities/php-coding-standard": "1.0.2"
+  },
+  "require": {
+    "php": ">=8.0",
+    "codeigniter/framework": "^3.1.13",
+    "ckeditor/ckeditor": "^4.7",
+    "ext-json": "*"
+  },
+  "autoload": {
+    "psr-4": {
+	  "core\\": "application/core/",
+      "checako\\business\\" : "application/libraries/checako/business/"
+    }
+  },
+  "scripts": {
+    "post-dependencies-solving": [
+      "bash contrib/setup-hook.sh"
+    ]
+  }
+}
