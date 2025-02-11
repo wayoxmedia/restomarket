@@ -36,15 +36,15 @@ RUN bash -c '[[ -n "$(pecl list | grep xdebug)" ]]\
 
 COPY ./docker/docker-php-ext-xdebug3-ext.ini /usr/local/etc/php/conf.d/docker-php-ext-xdebug-ext.ini
 COPY ./docker/docker-php-extra.ini /usr/local/etc/php/conf.d/docker-php-extra.ini
-#COPY ./docker/default.conf /etc/apache2/sites-enabled/checako.test.conf
-COPY ./docker/default.conf /etc/apache2/sites-available/checako.test.conf
-RUN a2ensite checako.test
+#COPY ./docker/default.conf /etc/apache2/sites-enabled/eglee.test.conf
+COPY ./docker/default.conf /etc/apache2/sites-available/eglee.test.conf
+RUN a2ensite eglee.test
 
 ### UTILITIES
 #COPY ./docker/git-prompt.sh /root/.git-prompt.sh
 COPY ./docker/bash /root/bash
 COPY ./docker/firstRun.sh /root/firstRun.sh
-RUN bash /root/firstRun.sh
+#RUN bash /root/firstRun.sh
 
 
 ### NODE.JS
