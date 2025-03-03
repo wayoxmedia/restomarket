@@ -2,7 +2,7 @@
 <div class="logo-wrapper">
 	<h1 class="logo">
 		<span style="text-align: center;">
-			<img src="static/img/logo.png" class="logo-resize" alt="Eglee's Gourmet"/>
+			<img src="static/img/logo.png" class="" alt="Eglee's Gourmet"/>
 		</span>
 	</h1>
 </div>
