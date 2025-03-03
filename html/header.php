@@ -22,12 +22,10 @@
 	<div id="home-text-slider" class="home-carousel home-theme">
 		<div class="item">
 			<div class="home-carousel-caption">
-				<div style="height: fit-content">
-					<h2>&nbsp;</h2>
-					<p class="text-light">&nbsp;</p>
-					<p class="text-light">&nbsp;</p>
-					<p class="text-light">&nbsp;</p>
-					</div>
+				<h2>&nbsp;</h2>
+				<p class="text-light">&nbsp;</p>
+				<p class="text-light">&nbsp;</p>
+				<p class="text-light">&nbsp;</p>
 			</div>
 		</div>
 	</div>

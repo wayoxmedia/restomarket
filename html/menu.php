@@ -52,7 +52,6 @@
 				<a data-scroll href="#subscribe">
 					<span class="primary">Suscr&iacute;bete</span>
 					<span class="secondary">A nuestra lista informativa</span>
-					<div class="heading-sep"></div>
 				</a>
 			</li>
 		</ul>

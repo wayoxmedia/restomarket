@@ -1,13 +1,9 @@
 <!-- contacto -->
 <section id="contacto" class="">
-	<div id="grid-gallery" class="grid-gallery">
-		<section class="grid-wrap">
-			<div class="row">
-				<div class="col-xs-12">
-					<img src="static/img/contacto.jpg" alt="contacto" class="responsive" />
-				</div>
-			</div>
-		</section>
+	<div class="row">
+		<div class="col-xs-12">
+			<img src="static/img/contacto.jpg" alt="contacto" class="responsive" />
+		</div>
 	</div>
 </section>
 <!--
