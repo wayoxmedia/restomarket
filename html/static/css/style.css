@@ -80,22 +80,23 @@ h1, h2, h3, h4, h5, h6 {
 	text-rendering: optimizelegibility;
 	line-height: 1.2em;
 }
+h3 .sub-title-lg {
+	font-family: 'Amsi Pro Narrow Regular', sans-serif;
+	color: #FE0000;
+	text-rendering: optimizelegibility;
+	line-height: 1.2em;
+}
 .text-light{
 	color: #fff;
 }
 
 p {
-	font-family: "Merriweather",Helvetica,Arial,sans-serif;
+	font-family: "Amsi Pro Narrow Regular", Arial, sans-serif;
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 1.628571;
 	color: #666666;
 	text-rendering: optimizelegibility;
-	-webkit-hyphens: auto;
-	-moz-hyphens: auto;
-	-ms-hyphens: auto;
-	-o-hyphens: auto;
-	hyphens: auto;
 }
 strong {
 	font-weight: 800;
@@ -381,27 +382,25 @@ a.btn-a:hover, a.btn-a:active, a.btn-a:focus {
 }
 
 .section-title {
-	font-size: 3em;
-	font-family: "Raleway",Arial,sans-serif;
+	font-size: 4em;
+	font-family: 'Amsi Pro Narw Ultra', sans-serif;
 	font-weight: 800;
-	letter-spacing: 2px;
-	padding: 30px 0 0px 0;
-	text-transform: uppercase;
+	padding: 30px 0 0 0;
+	margin-bottom: 0px !important;
 }
 .section-title-border {
 	padding: 5px 20px;
 }
 .section-info {
-	padding: 10px 0px 80px 0px;
+	padding: 0px 0px 80px 0px;
 }
 .section-info h3 {
-	font-family: "Raleway",Arial,sans-serif;
-	font-size: 1.5em;
+	font-family: "Amsi Pro Narrow Regular",Arial,sans-serif;
+	font-size: 2em;
 	margin: 12px 0px;
 	line-height: 36px;
 	font-weight: 700;
 	text-align: center;
-	letter-spacing: 5px;
 	text-transform: uppercase;
 }
 .section-info p {
@@ -862,7 +861,7 @@ a .logo:hover {
 
 	font-size: 2.2em;
 	text-transform: uppercase;
-	font-family: "Raleway",Arial,sans-serif;
+	font-family: "Amsi Pro Narw Ultra",Arial,sans-serif;
 	font-weight: 800;
 	letter-spacing: 2px;
 }
@@ -871,7 +870,7 @@ a .logo:hover {
 	width: 100%;
 	overflow: hidden;
 	padding: 20px 40px;
-	text-align: left;
+	/*text-align: left;*/
 }
 .post-list:hover {
 	background: rgba(240, 240, 240, 0.1);
