@@ -8,12 +8,12 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 	<!-- favicon -->
-	<link rel="shortcut icon"
-		  href="favicon.ico"
-		  type="image/x-icon">
-	<link rel="icon"
-		  href="favicon.ico"
-		  type="image/x-icon">
+	<link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
+	<link rel="icon" type="image/svg+xml" href="favicon.svg" />
+	<link rel="shortcut icon" href="favicon.ico" />
+	<link rel="apple-touch-icon" sizes="180x180" href="static/img/apple-touch-icon.png" />
+	<meta name="apple-mobile-web-app-title" content="Eglee's Gourmet" />
+	<link rel="manifest" href="site.webmanifest" />
 
 	<!-- google fonts -->
 	<link href='https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800,900%7CMerriweather:400,400italic,300,300italic,700,700italic'
@@ -22,12 +22,29 @@
 	<!-- Font icons -->
 	<link rel="stylesheet"
 		  href="static/css/vendor/elegant-font-icon.css">
+	<!-- Page Fonts-->
+	<link rel="stylesheet"
+		  href="https://fonts.cdnfonts.com/css/amsi-pro-narw-ultra">
 
 	<!-- stylesheet -->
 	<link rel="stylesheet"
 		  href="static/css/vendor/bootstrap.css">
 	<link rel="stylesheet"
 		  href="static/css/style.css">
+	<link rel="stylesheet"
+		  href="static/css/custom.css">
+	<link rel="stylesheet"
+		  href="static/css/small.css">
+	<link rel="stylesheet"
+		  href="static/css/x-small.css">
+	<link rel="stylesheet"
+		  href="static/css/medium.css">
+	<link rel="stylesheet"
+		  href="static/css/large.css">
+	<link rel="stylesheet"
+		  href="static/css/x-large.css">
+	<link rel="stylesheet"
+		  href="static/css/xx-large.css">
 	<link rel="stylesheet"
 		  href="static/css/vendor/animate.css">
 	<link rel="stylesheet"
@@ -97,17 +114,5 @@
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAAZnaZBXLqNBRXjd-82km_NO7GUItyKek"></script>
 <script type="text/javascript"
 		src="static/js/script.js"></script>
-<script type="text/javascript">
-	/* ==============================================
-	Backstretch - v1.1
-	=============================================== */
-	$("#bg-slider").backstretch(
-		[
-			"static/img/top.jpg"
-		], {
-			fade: 1000,
-			duration: 5000
-		});
-</script>
 </body>
 </html>

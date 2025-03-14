@@ -1,0 +1,20 @@
+@charset "UTF-8";
+/**
+ * Title: Custom CSS File
+ * Author URI: http://wayox.com
+ * Website: http://wayox.com
+ */
+
+/* X-Small devices (landscape phones, 576px and up)
+ * No Bootstrap media query for `xs` since this it's its default.
+ */
+@media (max-width: 575px) {
+	.btn-cta {
+		font-size: 15px;
+	}
+
+	.logo-resize {
+		width: 45%;
+	}
+}
+

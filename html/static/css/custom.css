@@ -1,0 +1,46 @@
+@charset "UTF-8";
+/**
+ * Title: Custom CSS File
+ * Author URI: http://wayox.com
+ * Website: http://wayox.com
+ */
+
+/* Fonts */
+@import url('https://fonts.cdnfonts.com/css/amsi-pro-narw-ultra');
+.logo-wrapper {
+	left: 38%;
+}
+
+.btn-cta {
+	font-family: 'Amsi Pro Narw Ultra', sans-serif;
+	font-size: 30px;
+	padding: 10px 20px 4px;
+	background: #ffffff;
+	color: #fe0000;
+	border: 1px solid #ffffff;
+	text-transform: uppercase;
+	line-height: 1em;
+	cursor: pointer;
+	border-radius: 50px;
+	-webkit-transition: background 0.3s;
+	-moz-transition: background 0.3s;
+	-o-transition: background 0.3s;
+	transition: background 0.3s;
+}
+
+.btn-home-container {
+	position: absolute;
+	top: 65%;
+	left: 33%;
+}
+
+.logo-resize {
+	width: 100%;
+	height: auto;
+}
+
+.responsive {
+	width: 100%;
+	height: auto;
+}
+

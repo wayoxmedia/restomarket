@@ -104,16 +104,7 @@ $(function(){
 		$('.video .sdf, .video .suys, .video .arrow').addClass('visible');
 	}, 2000);
 
-	//bg video
-	$.backgroundVideo($('#bg-video'), {
-		"align": "centerXY",
-		"width": 846,
-		"height": 476,
-		"poster": "media/business-discussion-converted.jpg", // Change display image for video from here you want to use
-		"path": "media/",
-		"filename": "business-discussion-converted", // Change video from here you want to use
-		"types": ["mp4", "ogg", "webm"]
-	});
+
 
 	//play video
 	$('.video .play').click(function() {

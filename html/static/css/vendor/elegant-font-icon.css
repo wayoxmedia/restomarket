@@ -90,7 +90,7 @@ you can use the generic selector below, but it's slower:
 .icon_id_alt, .icon_id-2_alt, .icon_puzzle_alt, .icon_like_alt, .icon_dislike_alt, .icon_mug_alt,
 .icon_currency_alt, .icon_wallet_alt, .icon_pens_alt, .icon_easel_alt, .icon_flowchart_alt, .icon_datareport_alt,
 .icon_briefcase_alt, .icon_shield_alt, .icon_percent_alt, .icon_globe_alt, .icon_clipboard {
-	font-family: 'ElegantIcons';
+	font-family: 'ElegantIcons', serif;
 	speak: none;
 	font-style: normal;
 	font-weight: normal;

@@ -1,0 +1,19 @@
+@charset "UTF-8";
+/**
+ * Title: Custom CSS File
+ * Author URI: http://wayox.com
+ * Website: http://wayox.com
+ */
+
+/* Small devices (landscape phones, 576px and up to 767) */
+@media (min-width: 576px) and (max-width: 767px) {
+	.btn-cta {
+		font-size: 18px;
+		padding: 10px 20px 4px;
+	}
+
+	.logo-resize {
+		width: 55%;
+	}
+}
+
