@@ -13,7 +13,9 @@
 	<link rel="shortcut icon" href="favicon.ico" />
 	<link rel="apple-touch-icon" sizes="180x180" href="static/img/apple-touch-icon.png" />
 	<meta name="apple-mobile-web-app-title" content="Eglee's Gourmet" />
-	<link rel="manifest" href="site.webmanifest" />
+
+	<link rel="manifest" href="https://progressier.app/Zwoo55cJUYRiM7KTPAmZ/progressier.json"/>
+	<script defer src="https://progressier.app/Zwoo55cJUYRiM7KTPAmZ/script.js"></script>
 
 	<!-- google fonts -->
 	<link href='https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800,900%7CMerriweather:400,400italic,300,300italic,700,700italic'
