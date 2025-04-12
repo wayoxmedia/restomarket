@@ -3,6 +3,7 @@ Title: Main Scripts
 */
 
 $(function(){
+	debugger;
 	"use strict";
 	// Full screen pre loader
 	$(window).load(function(){
@@ -232,6 +233,40 @@ $(function(){
 	$("#contact_form input, #contact_form textarea").keyup(function() {
 		$("#contact_form input, #contact_form textarea").css('border-color','');
 		$("#form_result").slideUp();
+	});
+
+	$('#contact_form').on('submit', function(event) {
+		debugger;
+		event.preventDefault();
+
+		let formData = new FormData(this);
+		let formSettings =
+
+		$.ajax({
+			url:  CONFIG.apiUrl + 'contact-form',
+			type: 'POST',
+			data: formData,
+			processData: false,
+			contentType: false,
+			headers: {
+				'Accept': 'application/json',
+			},
+			success: function(data) {
+				alert(data.message);
+			},
+			error: function(xhr) {
+				let errorMsg = 'Something went wrong.';
+				if (xhr.responseJSON) {
+					if (xhr.responseJSON.errors) {
+						errorMsg = JSON.stringify(xhr.responseJSON.errors);
+					} else if (xhr.responseJSON.message) {
+						errorMsg = xhr.responseJSON.message;
+					}
+				}
+				alert('Error: ' + errorMsg);
+				console.error('Request failed', xhr);
+			}
+		});
 	});
 
 });

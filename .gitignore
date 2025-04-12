@@ -1,14 +1,20 @@
-### App
+########################
+### App & Security
 .env
+html/.config.php
+secure
 
+########################
 ### IDE
 .idea/
 /.idea
 /*.iml
-
-########################
-### App security files
-html/application/config/development/database.php
+/nbproject/
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+*.sublime-workspace
+*.sublime-project
 
 ########################
 ### COMPOSER
@@ -18,19 +24,19 @@ composer.lock
 
 ########################
 ### App logs
-html/application/logs
-logs
-secure
-
+html/logs
 
 ########################
 ### Documentation
 docs
 
 ########################
-### More
-html/resources/
-
-########################
 ### OS
 .DS_Store
+
+########################
+### In HTML static files
+html/node_modules/
+html/vendor/
+html/composer.lock
+html/tests/mocks/database/ci_test.sqlite

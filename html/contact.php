@@ -23,10 +23,7 @@
 				 class="img-responsive image-centered" />
 		</div>
 	</div>
-	<form action="contact_form.php"
-		  method="post"
-		  class=""
-		  id="contact_form">
+	<form class="" id="contact_form">
 		<div class="row bgRed">
 			<p> </p>
 			<div class="col-xs-12 col-sm-1 col-md-1 col-lg-1"></div>
@@ -54,34 +51,6 @@
 			</div>
 			<div class="col-xs-12 col-sm-1 col-md-1 col-lg-1"></div>
 		</div>
-		<!--
-		<div class="row bgRed">
-			<div class="col-xs-12 col-sm-1 col-md-1 col-lg-1"></div>
-			<div class="col-xs-12 col-sm-5 col-md-5 col-lg-5">
-				<div class="form-elements-inner-padding">
-					<label for="iptPhone" class="form-label"></label>
-					<input type="tel"
-						   name="iptPhone"
-						   maxlength="10"
-						   placeholder="Your Phone"
-						   class="form-control"
-						   id="iptPhone">
-				</div>
-			</div>
-			<div class="col-xs-12 col-sm-5 col-md-5 col-lg-5">
-				<div class="form-elements-inner-padding">
-					<label for="iptAddress" class="form-label"></label>
-					<input type="text"
-						   name="iptAddress"
-						   maxlength="50"
-						   placeholder="Delivery Address"
-						   class="form-control"
-						   id="iptAddress">
-				</div>
-			</div>
-			<div class="col-xs-12 col-sm-1 col-md-1 col-lg-1"></div>
-		</div>
-		-->
 		<div class="row bgRed">
 			<div class="col-xs-12 col-sm-1 col-md-1 col-lg-1"></div>
 			<div class="col-xs-12 col-sm-10 col-md-10 col-lg-10">
@@ -108,6 +77,12 @@
 							id="btnSubmit">SEND</button>
 				</div>
 			</div>
+			<div class="col-xs-6 col-sm-4 col-md-4 col-lg-4">
+				<div class="form-elements-inner-padding">
+					<div class="hidden alert" role="alert"></div>
+				</div>
+			</div>
+		</div>
 	</form>
 	<div class="row bgRed">
 		<div class="col-xs-12"><p>&nbsp;</p></div>

@@ -191,6 +191,7 @@
 	</div>
 </div>
 <div id="wrapper" class="light-patterns">
+	<?php require_once("config.sample.php"); ?>
 	<?php include("header.php"); ?>
 	<?php include("about.php"); ?>
 	<?php include("combos.php"); ?>
@@ -205,6 +206,13 @@
 <!-- /wrapper -->
 
 <!-- Scripts -->
+<script>
+	const CONFIG = {
+		siteName: <?= json_encode(SITE_NAME) ?>,
+		supportEmail: <?= json_encode(SUPPORT_EMAIL) ?>,
+		apiUrl: <?= json_encode(API_URL) ?>
+	};
+</script>
 <script type="text/javascript"
 		src="static/js/vendor/bootstrap.min.js"></script>
 <script type="text/javascript"
