@@ -14,9 +14,6 @@
 	<link rel="apple-touch-icon" sizes="180x180" href="static/img/apple-touch-icon.png" />
 	<meta name="apple-mobile-web-app-title" content="Eglee's Gourmet" />
 
-	<link rel="manifest" href="https://progressier.app/Zwoo55cJUYRiM7KTPAmZ/progressier.json"/>
-	<script defer src="https://progressier.app/Zwoo55cJUYRiM7KTPAmZ/script.js"></script>
-
 	<!-- google fonts -->
 	<link href='https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800,900%7CMerriweather:400,400italic,300,300italic,700,700italic'
 	      rel='stylesheet'
@@ -189,9 +186,7 @@
 <!-- preloader -->
 <div id="pre-loader">
 	<div class="pre-loader-container">
-		<h2 class="section-title text-center preload-logo wow bounceIn">
-			<span class="section-title-border">egleesgourmet.com</span>
-		</h2>
+		<img src="static/img/logo.png" alt="Eglee's Gourmet" class="img-responsive image-centered" />
 		<div class="loader wow"></div>
 	</div>
 </div>

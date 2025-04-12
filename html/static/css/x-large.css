@@ -14,5 +14,9 @@
 		font-size: 36px;
 		padding: 10px 20px 4px;
 	}
+	.responsive-text-align-3-cols,
+	.responsive-text-align-4-cols {
+		text-align: left;
+	}
 }
 

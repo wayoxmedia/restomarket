@@ -15,5 +15,10 @@
 	.logo-resize {
 		width: 75%;
 	}
+
+	.responsive-text-align-3-cols,
+	.responsive-text-align-4-cols {
+		text-align: left;
+	}
 }
 

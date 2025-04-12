@@ -105,9 +105,13 @@ strong.colored {
 	color: #029ece;
 	font-weight: 800;
 }
-input[type=text], input[type=url], input[type=tel], input[type=number], input[type=email], textarea {
-	width: 100%;
-	font-family: "Raleway",Helvetica,Arial,sans-serif;
+input[type=text],
+input[type=url],
+input[type=tel],
+input[type=number],
+input[type=email],
+textarea {
+	font-family: "Amsi Pro Narrow Regular", Arial, sans-serif;
 	height: 40px;
 	display: block;
 	font-size: 15px;
@@ -119,6 +123,20 @@ input[type=text], input[type=url], input[type=tel], input[type=number], input[ty
 	-ms-transition: all .1s ease-in-out;
 	-o-transition: all .1s ease-in-out;
 	transition: all .1s ease-in-out;
+}
+
+.width-25 {width: 25%;}
+.width-50 {width: 50%;}
+.width-75 {width: 75%;}
+.width-100 {width: 100%;}
+
+.form-elements-inner-padding {
+	padding: 0 20px;
+}
+.btn-yellow {
+	color: #ffffff;
+	background-color: #f5c023;
+	border-color: #f5c023;
 }
 
 ::selection {color:#fff;background-color: #029ece;}
@@ -143,6 +161,7 @@ input[type=text], input[type=url], input[type=tel], input[type=number], input[ty
 	vertical-align: middle;
 	z-index: 3;
 	text-align:center;
+	background-color: #f5c023;
 }
 .back-logo {
 	z-index:-1;
@@ -245,7 +264,7 @@ input[type=text], input[type=url], input[type=tel], input[type=number], input[ty
 /*custom button*/
 
 .btn {
-	font-family: "Raleway",Arial,sans-serif;
+	font-family: "Amsi Pro Narw Ultra", Arial, sans-serif;
 	font-weight: 400;
 	letter-spacing: 2px;
 }
@@ -347,10 +366,9 @@ a.btn-a:hover, a.btn-a:active, a.btn-a:focus {
 }
 
 .green,.success{color:#719A3F;}
-.yellow,.warning{color:#F3C202;}
-.red,.error{color:#F26C51;}
-.txt-red{color: #ea2c09;}
-.txt-white{color: #ffffff;}
+.yellow,.warning{color:#f5c023;}
+.red,.error{color:#FE0000;}
+.white{color: #ffffff;}
 
 /* 2. Content
 -------------------------------------------------------------- */
@@ -1169,10 +1187,6 @@ a .logo:hover {
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-
-	h2{
-		font-size: 20px;
-	}
 	h3{
 		font-size: 18px;
 	}
@@ -1193,9 +1207,6 @@ a .logo:hover {
 	.navbar nav{
 		font-size: 24px;
 	}
-	h2.section-title,h2.single-title,h2.work-title,.services-info h2{
-		font-size: 20px;
-	}
 	.home-text h2{
 		font-size: 3em;
 	}
@@ -1209,7 +1220,6 @@ a .logo:hover {
 		font-size: 1.2em;
 	}
 	.section-info h3{
-		font-size: 18px;
 		padding: 12px;
 	}
 	.section-info p{

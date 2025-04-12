@@ -25,5 +25,8 @@
 	.section-title {
 		font-size: 3em;
 	}
+	.section-info {
+		padding: 0 0 30px 0;
+	}
 }
 

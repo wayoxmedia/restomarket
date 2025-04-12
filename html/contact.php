@@ -1,75 +1,115 @@
 <!-- contacto -->
 <section id="contacto" class="">
-	<div class="row">
-		<div class="col-xs-12">
-			<img src="static/img/contacto.jpg" alt="contacto" class="responsive" />
+	<div class="row bgRed">
+		<div class="col-xs-9 text-center">
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="">
+						<img src="static/img/horizontal_curves.png"
+							 alt="Curved Lines"
+							 class="img-responsive image-centered" />
+					</div>
+				</div>
+				<div class="col-xs-12">
+					<div class="">
+						<h2 class="section-title white">GET IN TOUCH</h2>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-3">
+			<img src="static/img/3WhiteDiag.png"
+				 alt="3 Lines White Diagonal"
+				 class="img-responsive image-centered" />
 		</div>
 	</div>
+	<form action="contact_form.php"
+		  method="post"
+		  class=""
+		  id="contact_form">
+		<div class="row bgRed">
+			<p> </p>
+			<div class="col-xs-12 col-sm-1 col-md-1 col-lg-1"></div>
+			<div class="col-xs-12 col-sm-5 col-md-5 col-lg-5">
+				<div class="form-elements-inner-padding">
+					<label for="iptName" class="form-label"></label>
+					<input type="text"
+						   name="iptName"
+						   maxlength="30"
+						   placeholder="Your Name"
+						   class="form-control"
+						   id="iptName">
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-5 col-md-5 col-lg-5">
+				<div class="form-elements-inner-padding">
+					<label for="iptEmail" class="form-label"></label>
+					<input type="email"
+						   name="iptEmail"
+						   maxlength="50"
+						   placeholder="Email Address"
+						   class="form-control"
+						   id="iptEmail">
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-1 col-md-1 col-lg-1"></div>
+		</div>
+		<!--
+		<div class="row bgRed">
+			<div class="col-xs-12 col-sm-1 col-md-1 col-lg-1"></div>
+			<div class="col-xs-12 col-sm-5 col-md-5 col-lg-5">
+				<div class="form-elements-inner-padding">
+					<label for="iptPhone" class="form-label"></label>
+					<input type="tel"
+						   name="iptPhone"
+						   maxlength="10"
+						   placeholder="Your Phone"
+						   class="form-control"
+						   id="iptPhone">
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-5 col-md-5 col-lg-5">
+				<div class="form-elements-inner-padding">
+					<label for="iptAddress" class="form-label"></label>
+					<input type="text"
+						   name="iptAddress"
+						   maxlength="50"
+						   placeholder="Delivery Address"
+						   class="form-control"
+						   id="iptAddress">
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-1 col-md-1 col-lg-1"></div>
+		</div>
+		-->
+		<div class="row bgRed">
+			<div class="col-xs-12 col-sm-1 col-md-1 col-lg-1"></div>
+			<div class="col-xs-12 col-sm-10 col-md-10 col-lg-10">
+				<div class="form-elements-inner-padding">
+					<label for="iptMessage" class="form-label"></label>
+					<textarea name="iptMessage"
+							  style="padding-left: 6px;"
+							  id="iptMessage"
+							  class="form-control"
+							  placeholder="Your Message"
+							  cols="30"
+							  rows="10"></textarea>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-1 col-md-1 col-lg-1"></div>
+		</div>
+		<div class="row bgRed"><p class="bgRed">&nbsp;</p></div>
+		<div class="row bgRed">
+			<div class="col-xs-12 col-sm-1 col-md-1 col-lg-1"></div>
+			<div class="col-xs-6 col-sm-4 col-md-4 col-lg-4">
+				<div class="form-elements-inner-padding">
+					<button type="submit"
+							class="btn btn-yellow red btn-lg btn-block"
+							id="btnSubmit">SEND</button>
+				</div>
+			</div>
+	</form>
+	<div class="row bgRed">
+		<div class="col-xs-12"><p>&nbsp;</p></div>
+	</div>
 </section>
-<!--
-<div class="row">
-<fieldset id="contactform" class="wow bounce" data-wow-duration="2s" data-wow-delay="0.5s">
-<div id="form_result"></div>
-<div class="row">
-<div class="col-md-6 col-md-offset-3">
-<label for="name"></label><input name="name" type="text" id="name" class="form-control" placeholder="Full Name">
-</div>
-</div>
-<div class="row">
-<div class="col-md-3 col-md-offset-3">
-<label for="email"></label><input name="email" type="text" id="email" class="form-control" value="" placeholder="Valid email ID">
-</div>
-<div class="col-md-3">
-<label for="phone"></label><input name="phone" type="text" id="phone" class="form-control" value="" placeholder="Contact No">
-</div>
-</div>
-<div class="row">
-<div class="col-md-6 col-md-offset-3">
-<label for="comments"></label><textarea name="message" cols="40" rows="5" id="comments" class="form-control" placeholder="Your Message"></textarea>
-</div>
-</div>
-<div class="row">
-<div class="col-md-12 text-center">
-<button type="submit" class="btn btn-default btn-lg" id="submit">SUBMIT</button>
-
-</div>
-</div>
-</fieldset>
-</form> -->
-
-<!-- /contact -->
-
-<!-- google map -->
-<!--<section id="google-map" class="row section">
-<div id="map" data-lat="25.8388963" data-lng="-80.3394606"></div>
-</section> -->
-<!-- /google-map -->
-
-<!-- social -->
-<!--<section id="social" class="row">
-<div class="soc-item facebook col-lg-3 col-md-3 col-sm-3">
-<a data-scroll href="#">
-<span class="symbol social_facebook"></span>
-<span class="count counter">1600</span>
-</a>
-</div>
-<div class="soc-item twitter col-lg-3 col-md-3 col-sm-3">
-<a data-scroll href="#">
-<span class="symbol social_twitter"></span>
-<span class="count counter">2100</span>
-</a>
-</div>
-<div class="soc-item google col-lg-3 col-md-3 col-sm-3">
-<a data-scroll href="#">
-<span class="symbol social_googleplus"></span>
-<span class="count counter">1200</span>
-</a>
-</div>
-<div class="soc-item linkedin col-lg-3 col-md-3 col-sm-3">
-<a data-scroll href="#">
-<span class="symbol social_linkedin"></span>
-<span class="count counter">1500</span>
-</a>
-</div>
-</section> -->
-<!-- /social -->
