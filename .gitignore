@@ -1,7 +1,7 @@
 ########################
 ### App & Security
 .env
-html/.config.php
+html/config.php
 secure
 
 ########################
