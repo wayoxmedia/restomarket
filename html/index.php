@@ -191,7 +191,7 @@
 	</div>
 </div>
 <div id="wrapper" class="light-patterns">
-	<?php require_once("config.sample.php"); ?>
+	<?php require_once("config.php"); ?>
 	<?php include("header.php"); ?>
 	<?php include("about.php"); ?>
 	<?php include("combos.php"); ?>
