@@ -3,7 +3,6 @@ Title: Main Scripts
 */
 
 $(function(){
-	debugger;
 	"use strict";
 	// Full screen pre loader
 	$(window).load(function(){
@@ -236,7 +235,6 @@ $(function(){
 	});
 
 	$('#contact_form').on('submit', function(event) {
-		debugger;
 		event.preventDefault();
 
 		let formData = new FormData(this);
