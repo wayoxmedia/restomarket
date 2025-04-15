@@ -238,7 +238,6 @@ $(function(){
 		event.preventDefault();
 
 		let formData = new FormData(this);
-		let formSettings =
 
 		$.ajax({
 			url:  CONFIG.apiUrl + 'contact-form',
