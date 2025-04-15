@@ -44,21 +44,24 @@ $(function(){
 	}
 
 	// Full screen navigations
-	let triggerBtn = document.getElementById( 'trigger-navbar' ),
-		navbar = document.querySelector( 'section.navbar' ),
-		closeBtn = navbar.querySelector( 'a.navbar-close' ),
-		navClick = navbar.querySelector( 'section.navbar nav ul li a' ),
-		transEndEventNames = {
-			'WebkitTransition': 'webkitTransitionEnd',
-			'MozTransition': 'transitionend',
-			'OTransition': 'oTransitionEnd',
-			'msTransition': 'MSTransitionEnd',
-			'transition': 'transitionend'
-		},
-		transEndEventName = transEndEventNames[ Modernizr.prefixed( 'transition' ) ],
-		support = { transitions : Modernizr.csstransitions };
+	let triggerBtn = document.getElementById( 'trigger-navbar' );
+	let navbar = document.querySelector( 'section.navbar' );
+	let closeBtn = navbar.querySelector( 'a.navbar-close' )
+	let transEndEventNames = {
+		'WebkitTransition': 'webkitTransitionEnd',
+		'MozTransition': 'transitionend',
+		'OTransition': 'oTransitionEnd',
+		'msTransition': 'MSTransitionEnd',
+		'transition': 'transitionend'
+	}
+	let transEndEventName = transEndEventNames[ Modernizr.prefixed( 'transition' ) ]
+	let support = { transitions : Modernizr.csstransitions };
 
-		function toggleOverlay() {
+	// Form Elements
+	let $contact_form_response = $('#contact-form-response');
+	let $btnSubmitContact = $('#btnSubmitContact');
+
+	function toggleOverlay() {
 		if (classie.has(navbar, 'open')) {
 			classie.remove(navbar, 'open');
 			classie.add(navbar, 'close');
@@ -87,87 +90,6 @@ $(function(){
 		toggleOverlay();
 	});
 
-	//prepare video
-	function sliderResize() {
-		$('.video').height($(window).height());
-		$('.home-text').css('top',$(window).height()/4+'px');
-		$('.home-text-2').css('top',$(window).height()/4.5+'px');
-	}
-	sliderResize();
-
-	$(window).resize(function() {
-		sliderResize();
-	});
-	$('.video .cont').addClass('visible');
-
-	setTimeout(function() {
-		$('.video .sdf, .video .suys, .video .arrow').addClass('visible');
-	}, 2000);
-
-
-
-	//play video
-	$('.video .play').click(function() {
-		//stop the video
-		if (!window.isMobile){
-			$('body').addClass('noscroll')
-				.append(`
-					<div class="previewer">
-						<div>
-							<iframe src="//player.vimeo.com/video/81676731?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff&amp;autoplay=1"
-								frameborder="0"
-								webkitallowfullscreen
-								mozallowfullscreen
-								allowfullscreen>
-							</iframe>
-						</div>
-						<div class="close"></div>
-					</div>`);
-
-			//pause video
-			$('.body').addClass('paused');
-
-			$('.previewer').click(function() {
-				$('.body').removeClass('noscroll');
-				$(this).remove();
-
-				//play video back
-				$('.body').removeClass('paused');
-			});
-			return false;
-		}
-	});
-
-	// Carousel
-	$("#home-text-slider").owlCarousel({
-	  navigation : true, // Show next and prev buttons
-	  slideSpeed : 300,
-	  autoPlay : 5000,
-	  stopOnHover : false,
-	  paginationSpeed : 400,
-	  singleItem:true
-	});
-
-	$("#testimonial-slider").owlCarousel({
-	  navigation : true, // Show next and prev buttons
-	  slideSpeed : 300,
-	  autoPlay : 5000,
-	  stopOnHover : false,
-	  paginationSpeed : 400,
-	  singleItem:true
-	});
-
-	//Counter Up
-	$('.counter').counterUp({
-		delay: 5,
-		time: 800
-	});
-
-	//theme style switcher
-	$('#theme-customizer .cog').click(function(){
-		$('#theme-options').slideToggle("slow")
-	});
-
 	//reset previously set border colors and hide all message on .keyup()
 	$("#contact_form input, #contact_form textarea").keyup(function() {
 		$("#contact_form input, #contact_form textarea").css('border-color','');
@@ -176,6 +98,8 @@ $(function(){
 
 	$('#contact_form').on('submit', function(event) {
 		event.preventDefault();
+		// Disable the submit button to prevent multiple clicks.
+		$btnSubmitContact.prop('disabled', true);
 
 		let formData = new FormData(this);
 
@@ -189,18 +113,22 @@ $(function(){
 				'Accept': 'application/json',
 			},
 			success: function(data) {
-				alert(data.message);
+				$contact_form_response.removeClass('hidden');
+				$contact_form_response.addClass('alert-success');
+				$contact_form_response.html("Su mensaje ha sido enviado, pronto nos pondremos en contacto con usted.");
+				// $contact_form_response.html(data.message);
 			},
 			error: function(xhr) {
-				let errorMsg = 'Something went wrong.';
-				if (xhr.responseJSON) {
+				$contact_form_response.removeClass('hidden');
+				$contact_form_response.addClass('alert-danger');
+				$contact_form_response.html('Ha ocurrido un error, por favor intente m&aacute;s tarde.');
+				/*if (xhr.responseJSON) {
 					if (xhr.responseJSON.errors) {
 						errorMsg = JSON.stringify(xhr.responseJSON.errors);
 					} else if (xhr.responseJSON.message) {
 						errorMsg = xhr.responseJSON.message;
 					}
-				}
-				alert('Error: ' + errorMsg);
+				}*/
 				console.error('Request failed', xhr);
 			}
 		});

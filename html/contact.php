@@ -12,7 +12,7 @@
 				</div>
 				<div class="col-xs-12">
 					<div class="">
-						<h2 class="section-title white">GET IN TOUCH</h2>
+						<h2 class="section-title white">PONTE EN CONTACTO</h2>
 					</div>
 				</div>
 			</div>
@@ -24,6 +24,7 @@
 		</div>
 	</div>
 	<form class="" id="contact_form">
+		<input type="hidden" name="XDEBUG_TRIGGER" id="XDEBUG_TRIGGER" value="PHPSTORM">
 		<div class="row bgRed">
 			<p> </p>
 			<div class="col-xs-12 col-sm-1 col-md-1 col-lg-1"></div>
@@ -62,6 +63,7 @@
 							  class="form-control"
 							  placeholder="Your Message"
 							  cols="30"
+							  maxlength="500"
 							  rows="10"></textarea>
 				</div>
 			</div>
@@ -74,15 +76,19 @@
 				<div class="form-elements-inner-padding">
 					<button type="submit"
 							class="btn btn-yellow red btn-lg btn-block"
-							id="btnSubmit">SEND</button>
-				</div>
-			</div>
-			<div class="col-xs-6 col-sm-4 col-md-4 col-lg-4">
-				<div class="form-elements-inner-padding">
-					<div class="hidden alert" role="alert"></div>
+							id="btnSubmitContact">ENVIAR</button>
 				</div>
 			</div>
 		</div>
+		<div class="row bgRed"><p>&nbsp;</p></div>
+		<div class="row bgRed">
+			<div class="col-xs-12 col-sm-1 col-md-1 col-lg-1"></div>
+			<div class="col-xs-12 col-sm-10 col-md-10 col-lg-10">
+				<div class="form-elements-inner-padding">
+					<div class="hidden alert" role="alert" id="contact-form-response"></div>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-1 col-md-1 col-lg-1"></div>
 	</form>
 	<div class="row bgRed">
 		<div class="col-xs-12"><p>&nbsp;</p></div>
