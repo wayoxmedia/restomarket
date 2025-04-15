@@ -16,8 +16,8 @@
 
 	<!-- google fonts -->
 	<link href='https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800,900%7CMerriweather:400,400italic,300,300italic,700,700italic'
-	      rel='stylesheet'
-	      type='text/css'>
+		  rel='stylesheet'
+		  type='text/css'>
 	<!-- Font icons -->
 	<link rel="stylesheet"
 		  href="static/css/vendor/elegant-font-icon.css">
@@ -232,19 +232,17 @@
 <script type="text/javascript"
 		src="static/js/vendor/wow.js"></script>
 <script type="text/javascript"
-        src="static/js/vendor/detectmobilebrowser.js"></script>
+		src="static/js/vendor/detectmobilebrowser.js"></script>
 <script type="text/javascript"
-        src="static/js/vendor/owl.carousel.min.js"></script>
+		src="static/js/vendor/owl.carousel.min.js"></script>
 <script type="text/javascript"
-        src="static/js/vendor/imagesloaded.pkgd.min.js"></script>
+		src="static/js/vendor/imagesloaded.pkgd.min.js"></script>
 <script type="text/javascript"
-        src="static/js/vendor/masonry.pkgd.min.js"></script>
+		src="static/js/vendor/masonry.pkgd.min.js"></script>
 <script type="text/javascript"
-        src="static/js/vendor/cbpGridGallery.js"></script>
+		src="static/js/vendor/cbpGridGallery.js"></script>
 <script type="text/javascript"
-        src="static/js/vendor/styleswitch.js"></script>
-<script type="text/javascript"
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAAZnaZBXLqNBRXjd-82km_NO7GUItyKek"></script>
+		src="static/js/vendor/styleswitch.js"></script>
 <script type="text/javascript"
 		src="static/js/script.js"></script>
 </body>

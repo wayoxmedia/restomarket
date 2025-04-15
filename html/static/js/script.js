@@ -168,66 +168,6 @@ $(function(){
 		$('#theme-options').slideToggle("slow")
 	});
 
-	// Ajax working contact form
-	$("#submit").click(function() {
-		//get input field values
-		let user_name       = $('input[name=name]').val();
-		let user_email      = $('input[name=email]').val();
-		let user_phone      = $('input[name=phone]').val();
-		let user_message    = $('textarea[name=message]').val();
-		let post_data;
-		let output;
-
-		//simple validation at client's end
-		//we simply change border color to red if empty field using .css()
-		let proceed = true;
-		if (user_name===""){
-			$('input[name=name]').css('border-color','red');
-			proceed = false;
-		}
-		if (user_email===""){
-			$('input[name=email]').css('border-color','red');
-			proceed = false;
-		}
-		if (user_phone==="") {
-			$('input[name=phone]').css('border-color','red');
-			proceed = false;
-		}
-		if (user_message==="") {
-			$('textarea[name=message]').css('border-color','red');
-			proceed = false;
-		}
-
-		// everything looks good! let's proceed.
-		if (proceed) {
-			//data to be sent to server
-			post_data = {
-				'userName':user_name,
-				'userEmail':user_email,
-				'userPhone':user_phone,
-				'userMessage':user_message
-			};
-
-			//Ajax post data to server
-			$.post('include/contact.php', post_data, function(response){
-
-				//load json data from server and output message
-				if(response.type == 'error') {
-					output = '<div class="error text-center">'+response.text+'</div>';
-				}
-				else{
-					output = '<div class="success text-center">'+response.text+'</div>';
-					//reset values in all input fields
-					$('#contact_form input').val('');
-					$('#contact_form textarea').val('');
-				}
-
-				$("#form_result").hide().html(output).slideDown();
-			}, 'json');
-
-		}
-	});
-
 	//reset previously set border colors and hide all message on .keyup()
 	$("#contact_form input, #contact_form textarea").keyup(function() {
 		$("#contact_form input, #contact_form textarea").css('border-color','');

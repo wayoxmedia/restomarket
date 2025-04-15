@@ -12,6 +12,14 @@
 		padding: 10px 20px 4px;
 	}
 
+	.btn-x-small-red {
+		font-size: 30px;
+		margin-bottom: 0 !important;
+	}
+	.txt-x-small {
+		font-size: 15px;
+	}
+
 	.logo-resize {
 		width: 55%;
 	}

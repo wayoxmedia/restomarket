@@ -23,7 +23,7 @@
 		<p>&nbsp;</p>
 		<div class="col-xs-12 col-sm-1 col-md-1 col-lg-1"></div>
 		<div class="col-xs-12 col-sm-2 col-md-2 col-lg-2 listing-wrapper wow fadeInLeft animated" data-wow-delay="0.5s">
-			<img src="static/img/pabellon.png" alt="Pabell&oacute;n Venezolano"/>
+			<img src="static/img/icono_pabellon.png" alt="Pabell&oacute;n Venezolano"/>
 		</div>
 		<div class="col-xs-12 col-sm-2 col-md-2 col-lg-2 listing-wrapper wow fadeInLeft animated">
 			<h3 class="col-title">Pabell&oacute;n</h3>
@@ -34,7 +34,7 @@
 		</div>
 		<div class="col-xs-12 col-sm-2 col-md-2 col-lg-2 listing-wrapper wow fadeInLeft animated" data-wow-delay="0.5s"></div>
 		<div class="col-xs-12 col-sm-2 col-md-2 col-lg-2 listing-wrapper wow fadeInLeft animated" data-wow-delay="0.5s">
-			<img src="static/img/pabellon.png" alt="Pabell&oacute;n Venezolano"/>
+			<img src="static/img/icono_pollo.png" alt="Pollo al grill"/>
 		</div>
 		<div class="col-xs-12 col-sm-2 col-md-2 col-lg-2 listing-wrapper wow fadeInLeft animated" data-wow-delay="0.5s">
 			<h3 class="col-title">Pollo al grill</h3>
@@ -48,7 +48,7 @@
 	<div class="row bgTan responsive-text-align-4-cols">
 		<div class="col-xs-12 col-sm-1 col-md-1 col-lg-1"></div>
 		<div class="col-xs-12 col-sm-2 col-md-2 col-lg-2 listing-wrapper wow fadeInLeft animated" data-wow-delay="0.5s">
-			<img src="static/img/pabellon.png" alt="Pabell&oacute;n Venezolano"/>
+			<img src="static/img/icono_bollos.png" alt="Bollos pelones"/>
 		</div>
 		<div class="col-xs-12 col-sm-2 col-md-2 col-lg-2 listing-wrapper wow fadeInLeft animated" data-wow-delay="0.5s">
 			<h3 class="col-title">Bollos pelones</h3>
@@ -59,7 +59,7 @@
 		</div>
 		<div class="col-xs-12 col-sm-2 col-md-2 col-lg-2 listing-wrapper wow fadeInLeft animated" data-wow-delay="0.5s"></div>
 		<div class="col-xs-12 col-sm-2 col-md-2 col-lg-2 listing-wrapper wow fadeInLeft animated" data-wow-delay="0.5s">
-			<img src="static/img/pabellon.png" alt="Pabell&oacute;n Venezolano"/>
+			<img src="static/img/icono_chuleta.png" alt="Chuleta de cerdo"/>
 		</div>
 		<div class="col-xs-12 col-sm-2 col-md-2 col-lg-2 listing-wrapper wow fadeInLeft animated" data-wow-delay="0.5s">
 			<h3 class="col-title">Chuleta de cerdo</h3>

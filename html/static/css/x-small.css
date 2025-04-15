@@ -12,6 +12,17 @@
 	.btn-cta {
 		font-size: 15px;
 	}
+	.btn-x-small-red {
+		font-size: 20px;
+		margin-bottom: 0 !important;
+	}
+	.txt-x-small {
+		font-size: 10px;
+	}
+
+	.btn-arepas-container {
+		top: 0;
+	}
 
 	.logo-resize {
 		width: 45%;

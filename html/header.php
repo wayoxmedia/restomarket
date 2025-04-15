@@ -20,10 +20,10 @@
 		<div class="col-xs-12">
 			<img src="static/img/top.jpg" alt="arepas" class="responsive" />
 			<div class="btn-home-container">
-			<input type="button"
-				   value="ORDENA AHORA"
-				   class="btn-cta" onclick="window.location.href='#contacto'">
-		</div>
+				<input type="button"
+					   value="ORDENA AHORA"
+					   class="btn-cta btn-cta-white" onclick="window.location.href='#contacto'">
+			</div>
 		</div>
 	</div>
 </section>
