@@ -32,5 +32,17 @@
 	.section-title {
 		font-size: 3em;
 	}
+
+	.subscribe-height {
+		height: 155px;
+	}
+
+	.rounded {
+		border-radius: 0;
+	}
+
+	.subscribe-select-width {
+		width: 100%;
+	}
 }
 

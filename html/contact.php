@@ -58,7 +58,6 @@
 				<div class="form-elements-inner-padding">
 					<label for="iptMessage" class="form-label"></label>
 					<textarea name="iptMessage"
-							  style="padding-left: 6px;"
 							  id="iptMessage"
 							  class="form-control"
 							  placeholder="Your Message"
@@ -85,10 +84,11 @@
 			<div class="col-xs-12 col-sm-1 col-md-1 col-lg-1"></div>
 			<div class="col-xs-12 col-sm-10 col-md-10 col-lg-10">
 				<div class="form-elements-inner-padding">
-					<div class="hidden alert" role="alert" id="contact-form-response"></div>
+					<div class="hidden alert" role="alert" id="contactFormResponse"></div>
 				</div>
 			</div>
 			<div class="col-xs-12 col-sm-1 col-md-1 col-lg-1"></div>
+		</div>
 	</form>
 	<div class="row bgRed">
 		<div class="col-xs-12"><p>&nbsp;</p></div>

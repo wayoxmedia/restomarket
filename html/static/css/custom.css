@@ -124,3 +124,97 @@
 	margin-left: auto;
 	margin-right: auto;
 }
+
+.txt-x-small {
+	font-family: "Amsi Pro Narrow Regular", Arial, sans-serif;
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 1.1;
+	text-rendering: optimizelegibility;
+}
+
+.green,.success{color:#719A3F;}
+.yellow,.warning{color:#f5c023;}
+.red,.error{color:#FE0000;}
+.white{color: #ffffff;}
+
+.width-25 {width: 25%;}
+.width-50 {width: 50%;}
+.width-75 {width: 75%;}
+.width-100 {width: 100%;}
+
+.form-elements-inner-padding {
+	padding: 0 20px;
+}
+
+.left-rounded {
+	border-radius: 50px 0 0 50px;
+}
+
+.right-rounded {
+	border-radius: 0 50px 50px 0;
+}
+
+.rounded {
+	border-radius: 50px;
+}
+
+.subscribe-container {
+	height: 50px;
+}
+
+.subscribe-select-alignment {
+	float: right;
+	padding-top: 10px;
+	height: 50px;
+}
+
+.input-position-absolute {
+	position: absolute;
+	inset-inline-start: 0px;
+	inset-block-start: 10px;
+}
+
+.input-position-absolute::-webkit-input-placeholder {
+	color: white;
+}
+
+.input-position-absolute:-moz-placeholder {
+	color: white;
+}
+
+.input-position-absolute::-moz-placeholder {
+	color: white;
+}
+
+.input-position-absolute:-ms-input-placeholder {
+	color: white;
+}
+
+.subscribe-button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 10px;
+	border: none;
+	background: transparent;
+	color: #fe0000;
+	font-weight: bold;
+	font-size: 28px;
+	cursor: pointer;
+	width: 100%;
+	text-align: center;
+}
+
+.subscribe-height {
+	height: 55px;
+}
+
+.subscribe-select-width {
+	width: 75%;
+}
+
+.subscribe-button-container {
+	height: 55px;
+	outline: 1px solid #f7d117;
+}

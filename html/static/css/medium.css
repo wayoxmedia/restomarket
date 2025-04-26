@@ -20,5 +20,17 @@
 		text-align: center;
 	}
 
+	.left-rounded {
+		border-radius: 0;
+	}
+
+	.right-rounded {
+		border-radius: 0;
+	}
+
+	.txt-x-small {
+		font-size: 18px;
+	}
+
 }
 

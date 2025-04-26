@@ -110,14 +110,9 @@ input[type=url],
 input[type=tel],
 input[type=number],
 input[type=email],
+select,
 textarea {
 	font-family: "Amsi Pro Narrow Regular", Arial, sans-serif;
-	height: 40px;
-	display: block;
-	font-size: 15px;
-	padding-left: 6px;
-	border-radius: 0;
-	margin: 0 10px 10px 0;
 	-webkit-transition: all .1s ease-in-out;
 	-moz-transition: all .1s ease-in-out;
 	-ms-transition: all .1s ease-in-out;
@@ -125,14 +120,6 @@ textarea {
 	transition: all .1s ease-in-out;
 }
 
-.width-25 {width: 25%;}
-.width-50 {width: 50%;}
-.width-75 {width: 75%;}
-.width-100 {width: 100%;}
-
-.form-elements-inner-padding {
-	padding: 0 20px;
-}
 .btn-yellow {
 	color: #ffffff;
 	background-color: #f5c023;
@@ -364,11 +351,6 @@ a.btn-a:hover, a.btn-a:active, a.btn-a:focus {
 	width: 0%;
 	z-index: -1;
 }
-
-.green,.success{color:#719A3F;}
-.yellow,.warning{color:#f5c023;}
-.red,.error{color:#FE0000;}
-.white{color: #ffffff;}
 
 /* 2. Content
 -------------------------------------------------------------- */
@@ -965,7 +947,6 @@ a .logo:hover {
 }
 .form-control {
 	border: none;
-	border-bottom: 1px solid #333;
 }
 
 /* 19. Google Map
