@@ -51,5 +51,9 @@
 	.subscribe-select-width {
 		width: 100%;
 	}
+
+	.footer-section {
+		text-align: center;
+	}
 }
 
