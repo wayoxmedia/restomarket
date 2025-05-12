@@ -1,25 +1,28 @@
-## PHP LAMP FOR DOCKER
-A simple Docker container to run php + mariaDb + Apache
+# PHP LAMP FOR DOCKER
+A simple Docker container to run php + Apache
 
-### PreRequisites
+## PreRequisites
 
 * git
 * ssh
 * docker
 
-### Installation
+## Installation
 
 You must have Docker installed and running properly.
 
 clone this repo using git
 
-`git clone git@gitlab.wayox.net:util/docker-lamp.git MyApp`
+`git clone git@github.com:wayoxmedia/restomarket.git EgleesGourmet`
 
 cd into your app
 
-`cd MyApp`
+`cd EgleesGourmet`
 
-get a copy of the actual .env file form admins or create your own .env file with DB credentials
+get a copy of the actual .env file form admins or create your own .env file and edit some values.
+```sh
+cp .env.example .env
+```
 
 run docker build
 
@@ -35,11 +38,11 @@ Check the containers are properly running
 
 `docker ps`
 
-#### Troubleshoot
+### Troubleshoot
 
 If container can not start, create `logs` folder inside `html` folder.
 
-#### Updating your hosts file
+### Updating your hosts file
 MacOS & Linux
 In your terminal, run
 ```sh
@@ -51,7 +54,7 @@ Open [SystemRoot]\system32\drivers\etc\hosts and edit the file with your text ed
 ```
 Add the following lines at the end of this hosts file
 ```
-127.0.0.1     myapp.ly
+127.0.0.1     eglee.test
 ```
 MacOS & Linux: 'Ctrl+O' then 'y' to save and 'Ctrl+X' to quit nano.
 PC: Save and quit your editor.
@@ -60,45 +63,18 @@ After these steps, you may need to flush your dns.
 
 Navigate with your browser to the phpmyadmin site
 
-`http://myapp.ly:8080`
+`http://eglee.test`
 
-If this URL doesn't work, replace myapp.ly with localhost or 127.0.0.1
-
-Login with the credentials located in the .env file (request a copy from admins)
-
-Select the MYSQL_DATABASE and click on the sql menu item
-
-Run the following query
-
-```sql
-drop table if exists `users`;
-create table `users` (
-    id int not null auto_increment,
-    username text not null,
-    password text not null,
-    primary key (id)
-);
-insert into `users` (username, password) values
-    ("admin","password"),
-    ("Alice","this is my password"),
-    ("Job","12345678");
-```
-
-Click go to run the query.
-
-Go to your IDE, open the html/index.php file and edit the credentials you are using in the .env file, around lines 9, 12 and 23
-
-Finally, navigate with your browser to the app home page.
-
-`http://myapp.ly`
+If this URL doesn't work, replace `eglee.test` with localhost or 127.0.0.1
 
 Check it is properly working.
 
-#### That's it! Welcome to your docker LAMP Environment.
+### That's it! Welcome to your docker LAMP Environment.
 
 ### Recommendations
 
-If you are starting a project using this LAMP env, remove the .git folder and create your fresh new repo. This will ensure you won't push to the original repo all of your work.
+* Use Visual Studio Code with the Remote - Containers extension to open your project in a container.
+* Use the Docker extension to manage your containers, images, volumes, networks and containers.
 
 Happy coding!
 
