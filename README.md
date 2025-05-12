@@ -14,11 +14,8 @@ A simple Docker container to run php + Apache
 You should have already a folder structure like this:
 
     YourDevFolder
-
     |- EgleesGourmet     <- This repo
-
     |- orchestration
-
     |- myStoreAdmin
 
 ### Getting Started
