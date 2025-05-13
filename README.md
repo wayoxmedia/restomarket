@@ -35,6 +35,11 @@ get a copy of the actual .env file form admins or create your own .env file and 
 cp .env.sample .env
 ```
 
+get a copy of the actual config.php file form admins or create your own config.php file and edit some values.
+```sh
+cp html/config.sample.php html/config.php
+```
+
 run docker build
 
 `docker compose --env-file .env build`
