@@ -77,7 +77,7 @@ PC: Save and quit your editor.
 
 After these steps, you may need to flush your dns.
 
-Navigate with your browser to the phpmyadmin site
+Navigate with your browser to the site
 
 `http://eglee.test`
 
