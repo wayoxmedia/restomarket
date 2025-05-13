@@ -32,7 +32,7 @@ cd into your app
 
 get a copy of the actual .env file form admins or create your own .env file and edit some values.
 ```sh
-cp .env.example .env
+cp .env.sample .env
 ```
 
 run docker build
