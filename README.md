@@ -30,12 +30,12 @@ cd into your app
 
 `cd EgleesGourmet`
 
-get a copy of the actual .env file form admins or create your own .env file and edit some values.
+get a copy of the actual .env file from admins or create your own .env file and edit some values.
 ```sh
 cp .env.sample .env
 ```
 
-get a copy of the actual config.php file form admins or create your own config.php file and edit some values.
+get a copy of the actual config.php file from admins or create your own config.php file and edit some values.
 ```sh
 cp html/config.sample.php html/config.php
 ```
