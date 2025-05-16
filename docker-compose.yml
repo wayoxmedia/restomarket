@@ -1,6 +1,6 @@
 services:
   php-apache-environment:
-    image: php:8.2-apache
+    image: eglee:1.0.0
     container_name: eglee
     build:
       context: ./
