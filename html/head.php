@@ -1,3 +1,4 @@
+<head>
 <meta charset="utf-8">
 <title><?= SITE_NAME?></title>
 <meta name="description" content="Comida Venezolana en Chicago, hecha en casa y con el sabor de la abuela.">
@@ -178,3 +179,4 @@
         src="static/js/vendor/jquery-1.11.0.min.js"></script>
 <script type="text/javascript"
         src="static/js/vendor/modernizr.custom.js"></script>
+</head>
