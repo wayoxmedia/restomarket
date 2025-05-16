@@ -24,11 +24,15 @@ You must have Docker installed and running properly.
 
 clone this repo using git
 
-`git clone git@github.com:wayoxmedia/restomarket.git EgleesGourmet`
+```sh
+git clone git@github.com:wayoxmedia/restomarket.git EgleesGourmet
+```
 
 cd into your app
 
-`cd EgleesGourmet`
+```sh
+cd EgleesGourmet
+```
 
 get a copy of the actual .env file from admins or create your own .env file and edit some values.
 ```sh
@@ -41,18 +45,23 @@ cp html/config.sample.php html/config.php
 ```
 
 run docker build
-
-`docker compose --env-file .env build`
+```sh
+docker compose --env-file .env build
+```
 
 this may take some minutes if this is your first install, images are been downloaded.
 
 Now, bring up the environment.
 
-`docker-compose up -d`
+```sh
+docker-compose up -d
+```
 
 Check the containers are properly running
 
-`docker ps`
+```sh
+docker ps
+```
 
 ### Troubleshoot
 
