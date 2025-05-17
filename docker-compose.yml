@@ -7,5 +7,6 @@ services:
       dockerfile: docker/Dockerfile
     volumes:
       - ./html:/var/www/html/
+      - ./secure:/var/www/secure/
     ports:
       - '${APP_PORT}:80'

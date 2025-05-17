@@ -1,8 +1,9 @@
 ########################
 ### App & Security
 .env
-html/config.php
-secure
+secure/*
+!.gitkeep
+!secure/config.sample.php
 
 ########################
 ### IDE

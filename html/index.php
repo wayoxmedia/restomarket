@@ -1,4 +1,4 @@
-<?php require_once("config.php"); ?>
+<?php require_once("../secure/config.php"); ?>
 <!DOCTYPE html>
 <html class="no-js" lang="es-US">
 <?php include("head.php"); ?>

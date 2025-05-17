@@ -41,7 +41,7 @@ cp .env.sample .env
 
 get a copy of the actual config.php file from admins or create your own config.php file and edit some values.
 ```sh
-cp html/config.sample.php html/config.php
+cp secure/config.sample.php secure/config.php
 ```
 
 run docker build
