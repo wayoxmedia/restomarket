@@ -4,6 +4,7 @@
 secure/*
 !.gitkeep
 !secure/config.sample.php
+!secure/config_js.sample.php
 
 ########################
 ### IDE
