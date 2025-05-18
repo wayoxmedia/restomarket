@@ -68,6 +68,6 @@
     </div>
   </div>
 </div>
-<?php include ('scripts.php'); ?>
+<?php include('scripts_login.php'); ?>
 </body>
 </html>
