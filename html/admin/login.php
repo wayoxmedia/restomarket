@@ -1,7 +1,18 @@
 <?php require_once("../../secure/config.php"); ?>
 <!doctype html>
 <html lang="en">
-<?php include("head.php"); ?>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title><?= SITE_NAME ?> - My Store Admin Panel</title>
+  <!-- CSS -->
+  <link rel="shortcut icon" type="image/png" href="../favicon.svg" />
+  <link rel="stylesheet" href="../static/admin/css/styles.min.css" />
+
+  <!-- JS -->
+  <script src="../static/admin/libs/jquery/dist/jquery.min.js"></script>
+</head>
+
 <body>
 <!--  Body Wrapper -->
 <div class="page-wrapper"

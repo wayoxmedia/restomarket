@@ -1,0 +1,30 @@
+// Import Bootstrap source files (desde node_modules)
+@use "bootstrap/scss/bootstrap";
+
+// Variables personalizadas
+@use "variables/variables";
+
+// Layouts
+@use "layouts/sidebar";
+@use "layouts/header";
+@use "layouts/layouts";
+
+// Componentes
+@use "component/reboot";
+@use "component/card";
+
+// Utilidades
+@use "utilities/icon-size";
+
+// Páginas
+@use "pages/dashboard1";
+
+// Scrollbar style (estilo en CSS plano, no SCSS)
+// ❌ @use no funciona con .css → usamos @import (válido solo para CSS puro)
+@import "../libs/simplebar/dist/simplebar.css";
+
+// Tabler Icons style (CSS plano)
+@import "../css/icons/tabler-icons/tabler-icons.css";
+
+// Tipografía de Google (sólo se puede usar @import para fuentes)
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
