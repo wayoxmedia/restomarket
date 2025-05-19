@@ -63,6 +63,36 @@ Check the containers are properly running
 docker ps
 ```
 
+### Post-Installation
+Now you can access your container using SSH.
+
+```sh
+docker exec -it eglee-php bash
+cd html
+```
+This will give you a shell inside the container. Make sure you are in the html folder, this is where the FrontEnd (web & admin) code is located and the package.json file lives here.
+You can also access the container using SSH with your IDE.
+If you are using Visual Studio Code, you can use the Remote - SSH extension to connect to the container.
+
+Time to install FrontEnd dependencies.
+
+```sh
+npm install
+```
+This will install all the dependencies needed for the FrontEnd, the folder node_modules will be created.
+
+### Compile SASS
+Some base CSS code is already included in the project, but you may want to add your own styles. Please don't modify the base SCSS files, instead create your own SCSS files and import them into the main SCSS file or use the custom.css file.
+```sh
+npm run build:css
+```
+This will compile the SCSS files into CSS files. The compiled CSS files will be created in the css folder.
+You can also use the watch command to automatically compile the SCSS files when you save them.
+```sh
+npm run watch:css
+```
+This will watch the SCSS files for changes and compile them automatically. Again, avoid modifying the base SCSS files unless you know what you are doing.
+
 ### Troubleshoot
 
 If container can not start, create `logs` folder inside `html` folder.
