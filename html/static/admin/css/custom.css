@@ -1,0 +1,7 @@
+/**
+  * Custom CSS for the admin interface
+ */
+.logo-admin {
+  max-width: 200px;
+  padding-top: 20px;
+}

@@ -1,8 +1,8 @@
 <!-- Sidebar scroll-->
 <div>
   <div class="brand-logo d-flex align-items-center justify-content-between">
-    <a href="./index.html" class="text-nowrap logo-img">
-      <img src="../static/img/logo.png" alt="" />
+    <a href="<?= SITE_ADMIN_URL?>dashboard.php" class="text-nowrap logo-img">
+      <img src="../static/img/logo.png" class="logo-admin" alt="" />
     </a>
     <div class="close-btn d-xl-none d-block sidebarToggler cursor-pointer" id="sidebarCollapse">
       <i class="ti ti-x fs-6"></i>
@@ -16,7 +16,7 @@
         <span class="hide-menu">Home</span>
       </li>
       <li class="sidebar-item">
-        <a class="sidebar-link" href="./index.html" aria-expanded="false">
+        <a class="sidebar-link" href="<?= SITE_ADMIN_URL?>dashboard.php" aria-expanded="false">
           <i class="ti ti-atom"></i>
           <span class="hide-menu">Dashboard</span>
         </a>
