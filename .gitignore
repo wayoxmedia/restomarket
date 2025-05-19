@@ -1,8 +1,10 @@
 ########################
 ### App & Security
 .env
-html/config.php
-secure
+secure/*
+!.gitkeep
+!secure/config.sample.php
+!secure/config_js.sample.php
 
 ########################
 ### IDE
@@ -41,3 +43,4 @@ html/node_modules/
 html/vendor/
 html/composer.lock
 html/tests/mocks/database/ci_test.sqlite
+html/static/admin/css/styles.min.css.map

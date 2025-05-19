@@ -22,8 +22,6 @@
 <script type="text/javascript"
         src="static/js/vendor/jquery.backstretch.min.js"></script>
 <script type="text/javascript"
-        src="static/js/vendor/jquery.backgroundvideo.min.js"></script>
-<script type="text/javascript"
         src="static/js/vendor/wow.js"></script>
 <script type="text/javascript"
         src="static/js/vendor/detectmobilebrowser.js"></script>

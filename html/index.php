@@ -1,17 +1,10 @@
-<?php require_once("config.php"); ?>
+<?php require_once("../secure/config.php"); ?>
 <!DOCTYPE html>
 <html class="no-js" lang="es-US">
-<head>
-	<?php include("head.php"); ?>
-</head>
+<?php include("head.php"); ?>
 <body>
-<!-- preloader -->
-<div id="pre-loader">
-	<div class="pre-loader-container">
-		<img src="static/img/logo.png" alt="Eglee's Gourmet" class="img-responsive image-centered" />
-		<div class="loader wow"></div>
-	</div>
-</div>
+<?php include("preloader.php"); ?>
+<!-- wrapper -->
 <div id="wrapper" class="light-patterns">
 	<?php include("header.php"); ?>
 	<?php include("about.php"); ?>
@@ -22,10 +15,8 @@
 	<?php include("subscribe.php"); ?>
 	<?php include("footer.php"); ?>
 	<?php include("menu.php"); ?>
-
 </div>
 <!-- /wrapper -->
-
 <?php include("scripts.php"); ?>
 </body>
 </html>
