@@ -42,7 +42,5 @@ docs
 html/node_modules/
 html/vendor/
 html/composer.lock
-package-lock.json
 html/tests/mocks/database/ci_test.sqlite
-
-static/admin/css/styles.min.css.map
+html/static/admin/css/styles.min.css.map
