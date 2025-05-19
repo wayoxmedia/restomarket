@@ -22,7 +22,7 @@
   .scroll-sidebar {
     overflow-y: auto;
     padding: vars.$sidebar-spacing-x;
-    height: calc(100vh - 310px);
+    height: calc(100vh - 180px);
     border-radius: vars.$border-radius;
 
     .simplebar-track.simplebar-horizontal {

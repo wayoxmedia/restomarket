@@ -1,4 +1,3 @@
-@use '../variables/variables' as vars;
 // ----------------------------------------------
 // Reboot Style
 // ----------------------------------------------
@@ -14,7 +13,7 @@ a {
 }
 
 a:hover {
-  color: vars.$primary;
+  color: $primary;
 }
 
 ul {

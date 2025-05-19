@@ -1,5 +1,4 @@
 @use '../variables/variables' as vars;
-@use "bootstrap/scss/bootstrap";
 // ----------------------------------------------
 // Header Style
 // ----------------------------------------------
@@ -67,7 +66,7 @@
   height: 8px;
 }
 
-@include bootstrap.media-breakpoint-down(lg) {
+@include media-breakpoint-down(lg) {
   .app-header {
     .navbar {
       flex-wrap: nowrap;
@@ -79,7 +78,7 @@
   }
 }
 
-@include bootstrap.media-breakpoint-down(md) {
+@include media-breakpoint-down(md) {
   .navbar-nav .dropdown-menu {
     position: absolute;
     width: 100%;
@@ -90,7 +89,7 @@
   }
 }
 
-@include bootstrap.media-breakpoint-down(lg) {
+@include media-breakpoint-down(lg) {
   .w-xs-100 {
     width: 100% !important;
   }

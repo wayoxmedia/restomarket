@@ -2300,7 +2300,7 @@
 <script src="../static/admin/libs/jquery/dist/jquery.min.js"></script>
 <script src="../static/admin/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 <script src="../static/admin/js/sidebarMenu.js"></script>
-<script src="../static/admin/js/app.min.js"></script>
+<script src="../static/admin/js/app.js"></script>
 <script src="../static/admin/libs/apexcharts/dist/apexcharts.min.js"></script>
 <script src="../static/admin/libs/simplebar/dist/simplebar.js"></script>
 <script src="../static/admin/js/dashboard.js"></script>

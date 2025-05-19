@@ -1,5 +1,4 @@
 @use '../variables/variables' as vars;
-@use "bootstrap/scss/bootstrap";
 // ----------------------------------------------
 // Layout Style
 // ----------------------------------------------
@@ -27,13 +26,13 @@ body {
     transition: 0.2s ease-in;
     padding: 180px vars.$grid-gutter-width vars.$grid-gutter-width;
 
-    @include bootstrap.media-breakpoint-down(lg){
+    @include media-breakpoint-down(lg){
       padding-top: 230px;
     }
   }
 }
 
-@include bootstrap.media-breakpoint-down(md) {
+@include media-breakpoint-down(md) {
   .body-wrapper {
     >.container-fluid {
       padding: 30px 20px;
@@ -69,7 +68,7 @@ body {
   }
 }
 
-@include bootstrap.media-breakpoint-up(xl) {
+@include media-breakpoint-up(xl) {
   #main-wrapper[data-layout="vertical"] {
 
     // Fixed Header + Mini sidebar

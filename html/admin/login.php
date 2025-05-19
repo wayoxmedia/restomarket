@@ -37,7 +37,7 @@
                 <img src="../static/img/eglita_ok.png" alt="">
               </a>
               <p class="text-center"><?= SITE_NAME ?></p>
-              <form>
+              <form id="loginForm">
                 <input type="hidden" name="XDEBUG_TRIGGER" id="XDEBUG_TRIGGER" value="PHPSTORM">
                 <div class="mb-3">
                   <label for="iptEmail"
@@ -66,9 +66,7 @@
                            id="flexCheckChecked"
                            checked>
                     <label class="form-check-label text-dark"
-                           for="flexCheckChecked">
-                      Remember me
-                    </label>
+                           for="flexCheckChecked">Remember me</label>
                   </div>
                   <a class="text-primary fw-bold"
                      href="forgot.php">Forgot Password?</a>
