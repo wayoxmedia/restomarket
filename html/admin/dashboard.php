@@ -14,7 +14,7 @@
         <a href="./index.html" class="text-nowrap logo-img">
           <img src="../static/img/logo.png" alt="" />
         </a>
-        <div class="close-btn d-xl-none d-block sidebartoggler cursor-pointer" id="sidebarCollapse">
+        <div class="close-btn d-xl-none d-block sidebarToggler cursor-pointer" id="sidebarCollapse">
           <i class="ti ti-x fs-6"></i>
         </div>
       </div>
@@ -1758,7 +1758,7 @@
       <nav class="navbar navbar-expand-lg navbar-light">
         <ul class="navbar-nav">
           <li class="nav-item d-block d-xl-none">
-            <a class="nav-link sidebartoggler " id="headerCollapse" href="javascript:void(0)">
+            <a class="nav-link sidebarToggler " id="headerCollapse" href="javascript:void(0)">
               <i class="ti ti-menu-2"></i>
             </a>
           </li>

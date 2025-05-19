@@ -1,6 +1,6 @@
 {
   "name": "eglee-gourmet",
-  "description": "Include Bootstrap's source Sass and individual JavaScript plugins.",
+  "description": "Include Bootstrap's source Sass and some JavaScript plugins.",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "apexcharts": "^3.54.1",
-    "bootstrap": "^5.3.6",
+    "bootstrap": "^5.3.3",
     "jquery": "^3.6.3"
   }
 }

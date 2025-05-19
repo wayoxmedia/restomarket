@@ -72,7 +72,7 @@ body {
 @include bootstrap.media-breakpoint-up(xl) {
   #main-wrapper[data-layout="vertical"] {
 
-    // Fixed Header + Minisidebar
+    // Fixed Header + Mini sidebar
     &[data-header-position="fixed"][data-sidebartype="mini-sidebar"] {
       .app-header {
         width: calc(100%);
@@ -105,7 +105,7 @@ body {
     &[data-sidebartype="mini-sidebar"],
     &[data-sidebartype="full"] {
       .left-sidebar {
-        left: vars.$sidebar-width-full;
+        left: - vars.$sidebar-width-full;
         top: 0;
       }
 

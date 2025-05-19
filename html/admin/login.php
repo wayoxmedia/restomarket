@@ -5,9 +5,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title><?= SITE_NAME ?> - My Store Admin Panel</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
   <!-- CSS -->
   <link rel="shortcut icon" type="image/png" href="../favicon.svg" />
   <link rel="stylesheet" href="../static/admin/css/styles.min.css" />
+  <link rel="stylesheet" href="../static/admin/css/custom.css" />
 
   <!-- JS -->
   <script src="../static/admin/libs/jquery/dist/jquery.min.js"></script>
@@ -79,6 +83,20 @@
     </div>
   </div>
 </div>
-<?php include('scripts_login.php'); ?>
+<script>
+  const CONFIG = {
+    siteName: <?= json_encode(defined('SITE_NAME') ? SITE_NAME : '') ?>,
+    supportEmail: <?= json_encode(defined('SUPPORT_EMAIL') ? SUPPORT_EMAIL : '') ?>,
+    apiUrl: <?= json_encode(defined('API_URL') ? API_URL : '') ?>,
+    local_env: <?= json_encode(defined('LOCAL_ENV') && LOCAL_ENV) ?>
+  };
+</script>
+
+<script src="../static/admin/libs/jquery/dist/jquery.min.js"></script>
+<!-- solar icons -->
+<script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
+<script src="../static/admin/js/login.js"></script>
+
 </body>
 </html>
