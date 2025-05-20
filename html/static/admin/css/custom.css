@@ -5,3 +5,8 @@
   max-width: 200px;
   padding-top: 20px;
 }
+
+.profile-img {
+  max-width: 35px;
+  max-height: 35px;
+}

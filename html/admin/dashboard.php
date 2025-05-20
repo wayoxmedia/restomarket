@@ -24,11 +24,11 @@
         <?php include("component_sales.php"); ?>
         <?php include("component_performance.php"); ?>
         <?php include("component_info.php"); ?>
-        <?php include("copyright.php"); ?>
+        <?php include("admin_footer.php"); ?>
       </div>
     </div>
   </div>
 </div>
-<?php include("admin_footer.php"); ?>
+<?php include("foot.php"); ?>
 </body>
 </html>
