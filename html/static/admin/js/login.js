@@ -7,7 +7,7 @@ $(document).ready(function () {
     const password = $('#iptPassword').val();
 
     $.ajax({
-      url: 'http://deepdevs.test/api/auth/login',
+      url: CONFIG.apiUrl + 'auth/login',
       method: 'POST',
       contentType: 'application/json',
       dataType: 'json',
