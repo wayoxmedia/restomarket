@@ -5,8 +5,10 @@
   <!-- CSS -->
   <link rel="shortcut icon" type="image/png" href="../favicon.svg" />
   <link rel="stylesheet" href="../static/admin/css/styles.min.css" />
+  <link rel="stylesheet" href="../static/admin/css/custom.css" />
 
   <!-- JS -->
-  <script src="../static/admin/libs/jquery/dist/jquery.min.js"></script>
   <script src="../static/admin/js/isLoggedIn.js"></script>
+  <script src="../static/admin/libs/jquery/dist/jquery.min.js"></script>
+  <script src="../static/admin/js/bootstrap.bundle.js"></script>
 </head>
