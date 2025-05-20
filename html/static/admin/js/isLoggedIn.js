@@ -1,7 +1,7 @@
 $(document).ready(function () {
-  /**
+  /***********
    * Variables
-   */
+   **********/
   let token = localStorage.getItem('token');
   let expiresAfter = parseInt(localStorage.getItem('token_expires_at'), 10) || 0;
 
@@ -70,7 +70,6 @@ $(document).ready(function () {
         'Authorization': 'Bearer ' + token
       },
       success: function (response) {
-        console.log("Token refreshed");
         setToken(response);
       },
       error: function (xhr) {

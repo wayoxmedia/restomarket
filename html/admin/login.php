@@ -14,7 +14,9 @@
   <link rel="stylesheet" href="../static/admin/css/custom.css" />
 
   <!-- JS -->
-  <script src="../static/admin/libs/jquery/dist/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+          integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+          crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -90,8 +92,6 @@
   };
 </script>
 
-<script src="../static/admin/libs/jquery/dist/jquery.min.js"></script>
-<!-- solar icons -->
 <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
 <script src="../static/admin/js/login.js"></script>
