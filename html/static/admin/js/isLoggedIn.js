@@ -64,7 +64,7 @@ $(document).ready(function () {
     if (!token) return;
 
     $.ajax({
-      url: 'http://deepdevs.test/api/auth/refresh',
+      url: CONFIG.apiUrl + 'auth/refresh',
       method: 'POST',
       headers: {
         'Authorization': 'Bearer ' + token
