@@ -67,8 +67,7 @@ docker ps
 Now you can access your container using SSH.
 
 ```sh
-docker exec -it eglee-php bash
-cd html
+docker exec -it eglee bash
 ```
 This will give you a shell inside the container. Make sure you are in the html folder, this is where the FrontEnd (web & admin) code is located and the package.json file lives here.
 You can also access the container using SSH with your IDE.
