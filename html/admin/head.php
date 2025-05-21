@@ -5,18 +5,11 @@
   <!-- CSS -->
   <link rel="shortcut icon" type="image/png" href="../favicon.svg" />
   <link rel="stylesheet" href="../static/admin/css/styles.min.css" />
-  <link rel="stylesheet" href="../static/admin/css/custom.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css"/>
+  <link rel="stylesheet" href="../static/admin/css/custom.css" />
 
   <!-- JS -->
-  <script>
-    const CONFIG = {
-      siteName: <?= json_encode(defined('SITE_NAME') ? SITE_NAME : '') ?>,
-      supportEmail: <?= json_encode(defined('SUPPORT_EMAIL') ? SUPPORT_EMAIL : '') ?>,
-      apiUrl: <?= json_encode(defined('API_URL') ? API_URL : '') ?>,
-      local_env: <?= json_encode(defined('LOCAL_ENV') && LOCAL_ENV) ?>
-    };
-  </script>
+  <?php include ("../../secure/config_js.php"); ?>
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"
           integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
           crossorigin="anonymous"></script>
