@@ -24,35 +24,73 @@ You must have Docker installed and running properly.
 
 clone this repo using git
 
-`git clone git@github.com:wayoxmedia/restomarket.git EgleesGourmet`
+```sh
+git clone git@github.com:wayoxmedia/restomarket.git EgleesGourmet
+```
 
 cd into your app
 
-`cd EgleesGourmet`
+```sh
+cd EgleesGourmet
+```
 
-get a copy of the actual .env file form admins or create your own .env file and edit some values.
+get a copy of the actual .env file from admins or create your own .env file and edit some values.
 ```sh
 cp .env.sample .env
 ```
 
-get a copy of the actual config.php file form admins or create your own config.php file and edit some values.
+get a copy of the actual config.php file from admins or create your own config.php file and edit some values.
 ```sh
-cp html/config.sample.php html/config.php
+cp secure/config.sample.php secure/config.php
 ```
 
 run docker build
-
-`docker compose --env-file .env build`
+```sh
+docker compose --env-file .env build
+```
 
 this may take some minutes if this is your first install, images are been downloaded.
 
 Now, bring up the environment.
 
-`docker-compose up -d`
+```sh
+docker-compose up -d
+```
 
 Check the containers are properly running
 
-`docker ps`
+```sh
+docker ps
+```
+
+### Post-Installation
+Now you can access your container using SSH.
+
+```sh
+docker exec -it eglee bash
+```
+This will give you a shell inside the container. Make sure you are in the html folder, this is where the FrontEnd (web & admin) code is located and the package.json file lives here.
+You can also access the container using SSH with your IDE.
+If you are using Visual Studio Code, you can use the Remote - SSH extension to connect to the container.
+
+Time to install FrontEnd dependencies.
+
+```sh
+npm install
+```
+This will install all the dependencies needed for the FrontEnd, the folder node_modules will be created.
+
+### Compile SASS
+Some base CSS code is already included in the project, but you may want to add your own styles. Please don't modify the base SCSS files, instead create your own SCSS files and import them into the main SCSS file or use the custom.css file.
+```sh
+npm run build:css
+```
+This will compile the SCSS files into CSS files. The compiled CSS files will be created in the css folder.
+You can also use the watch command to automatically compile the SCSS files when you save them.
+```sh
+npm run watch:css
+```
+This will watch the SCSS files for changes and compile them automatically. Again, avoid modifying the base SCSS files unless you know what you are doing.
 
 ### Troubleshoot
 

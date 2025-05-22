@@ -1,6 +1,0 @@
-# BEGIN Adding Server Vars
-fastcgi_param CHECAKO_APP_RESOURCES /var/www/josecarlos/data/www/josecarlosmartinez.studio/resources;
-fastcgi_param CHECAKO_APP_PRIVATE /var/www/josecarlos/data/www/josecarlosmartinez.studio/secure;
-fastcgi_param CHECAKO_APP_LOGS /var/www/josecarlos/data/logs/;
-fastcgi_param CHECAKO_CONTEXT /var/www/josecarlos/data/www/josecarlosmartinez.studio/html;
-# END Adding Server Vars

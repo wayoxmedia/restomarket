@@ -1,11 +1,12 @@
 services:
   php-apache-environment:
-    image: php:8.2-apache
+    image: eglee:1.0.0
     container_name: eglee
     build:
       context: ./
       dockerfile: docker/Dockerfile
     volumes:
       - ./html:/var/www/html/
+      - ./secure:/var/www/secure/
     ports:
       - '${APP_PORT}:80'
