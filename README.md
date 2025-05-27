@@ -37,6 +37,7 @@ cd EgleesGourmet
 get a copy of the actual .env file from admins or create your own .env file and edit some values.
 ```sh
 cp .env.sample .env
+# edit the file if you need to change some values
 nano .env
 ```
 
