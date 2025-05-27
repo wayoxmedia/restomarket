@@ -43,6 +43,7 @@ nano .env
 get a copy of the actual config.php file from admins or create your own config.php file and edit some values.
 ```sh
 cp secure/config.sample.php secure/config.php
+# edit the file if you need to change some values
 nano secure/config.php
 ```
 
