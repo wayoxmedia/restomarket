@@ -17,6 +17,12 @@
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"
           integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
           crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+          crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
+  <?php include ("../../secure/config_js.php"); ?>
+  <script src="../static/admin/js/login.js"></script>
 </head>
 
 <body>
@@ -83,19 +89,5 @@
     </div>
   </div>
 </div>
-<script>
-  const CONFIG = {
-    siteName: <?= json_encode(defined('SITE_NAME') ? SITE_NAME : '') ?>,
-    supportEmail: <?= json_encode(defined('SUPPORT_EMAIL') ? SUPPORT_EMAIL : '') ?>,
-    apiUrl: <?= json_encode(defined('API_URL') ? API_URL : '') ?>,
-    local_env: <?= json_encode(defined('LOCAL_ENV') && LOCAL_ENV) ?>
-  };
-</script>
-
-<script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
-<script src="../static/admin/js/login.js"></script>
-<script src="../static/admin/js/bootstrap.bundle.js"></script>
-
 </body>
 </html>
