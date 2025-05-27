@@ -12,7 +12,7 @@
 				</div>
 				<div class="col-xs-12">
 					<div class="">
-						<h2 class="section-title white">PONTE EN CONTACTO</h2>
+						<h2 class="section-title white"><?= TEXTO_PONTE_EN_CONTACTO?></h2>
 					</div>
 				</div>
 			</div>
