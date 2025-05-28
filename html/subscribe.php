@@ -17,7 +17,7 @@
 			<h2 class="section-title text-center">
 				<span class="section-title-border wow pulse red"
 					  data-wow-duration="1s"
-					  data-wow-delay="1s">SUSCR&Iacute;BETE</span>
+					  data-wow-delay="1s"><?= TEXTO_SUBSCRIBE?></span>
 			</h2>
 			<div class="section-info col-md-8 col-md-offset-2 text-center wow fadeInDown">
 				<h3 class="sub-title-lg red">&Uacute;nete a nuestra comunidad de amantes del sabor aut&eacute;ntico
