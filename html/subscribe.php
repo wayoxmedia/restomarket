@@ -34,8 +34,8 @@
 						<select id="selAddressType"
 								name="selAddressType"
 								class="form-control bgRed subscribe-select-width subscribe-select-alignment">
-							<option value="e">Email</option>
-							<option value="p">Tel&eacute;fono</option>
+							<option value="e"><?= TEXTO_EMAIL?></option>
+							<option value="p"><?= TEXTO_TELEFONO?></option>
 						</select>
 					</div>
 					<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 subscribe-container">
@@ -43,7 +43,7 @@
 						<input type="text"
 							   id="iptAddress"
 							   name="iptAddress"
-							   placeholder="Su Email"
+							   placeholder="<?= TEXTO_SU_EMAIL?>"
 							   class="form-control bgRed input-position-absolute" />
 					</div>
 					<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 subscribe-container">
