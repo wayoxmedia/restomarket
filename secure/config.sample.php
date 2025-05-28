@@ -8,3 +8,5 @@ const API_URL = 'http://route.test/api/';
 const VERSION = '1.0.0';
 
 const TEXTO_PONTE_EN_CONTACTO = '';
+const META_DESCRIPTION = '';
+const META_KEYWORDS = '';
