@@ -10,3 +10,5 @@ const VERSION = '1.0.0';
 const TEXTO_PONTE_EN_CONTACTO = '';
 
 const TEXTO_SUBSCRIBE = "";
+
+const TEXTO_SUBSCRIBE_PARRAFO = "";

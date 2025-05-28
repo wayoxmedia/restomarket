@@ -20,8 +20,7 @@
 					  data-wow-delay="1s"><?= TEXTO_SUBSCRIBE?></span>
 			</h2>
 			<div class="section-info col-md-8 col-md-offset-2 text-center wow fadeInDown">
-				<h3 class="sub-title-lg red">&Uacute;nete a nuestra comunidad de amantes del sabor aut&eacute;ntico
-					de Eglee's Gourmet, para recibir actualizaciones de nuestras promos y ofertas.</h3>
+				<h3 class="sub-title-lg red"><?= TEXTO_SUBSCRIBE_PARRAFO?></h3>
 			</div>
 		</div>
 	</div>
