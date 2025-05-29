@@ -8,7 +8,19 @@ const API_URL = 'http://route.test/api/';
 const VERSION = '1.0.0';
 
 const TEXTO_PONTE_EN_CONTACTO = '';
+
+const TEXTO_SUBSCRIBE = "";
+
+const TEXTO_SUBSCRIBE_PARRAFO = "";
+
+const TEXTO_EMAIL = "";
+
+const TEXTO_TELEFONO = "";
+
+const TEXTO_SU_EMAIL = "";.
+
 const META_DESCRIPTION = '';
+
 const META_KEYWORDS = '';
 const TEXT_WELCOME = '""';
 const TEXT_ESPECIALIDAD = '';

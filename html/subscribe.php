@@ -17,11 +17,10 @@
 			<h2 class="section-title text-center">
 				<span class="section-title-border wow pulse red"
 					  data-wow-duration="1s"
-					  data-wow-delay="1s">SUSCR&Iacute;BETE</span>
+					  data-wow-delay="1s"><?= TEXTO_SUBSCRIBE?></span>
 			</h2>
 			<div class="section-info col-md-8 col-md-offset-2 text-center wow fadeInDown">
-				<h3 class="sub-title-lg red">&Uacute;nete a nuestra comunidad de amantes del sabor aut&eacute;ntico
-					de Eglee's Gourmet, para recibir actualizaciones de nuestras promos y ofertas.</h3>
+				<h3 class="sub-title-lg red"><?= TEXTO_SUBSCRIBE_PARRAFO?></h3>
 			</div>
 		</div>
 	</div>
@@ -35,8 +34,8 @@
 						<select id="selAddressType"
 								name="selAddressType"
 								class="form-control bgRed subscribe-select-width subscribe-select-alignment">
-							<option value="e">Email</option>
-							<option value="p">Tel&eacute;fono</option>
+							<option value="e"><?= TEXTO_EMAIL?></option>
+							<option value="p"><?= TEXTO_TELEFONO?></option>
 						</select>
 					</div>
 					<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 subscribe-container">
@@ -44,7 +43,7 @@
 						<input type="text"
 							   id="iptAddress"
 							   name="iptAddress"
-							   placeholder="Su Email"
+							   placeholder="<?= TEXTO_SU_EMAIL?>"
 							   class="form-control bgRed input-position-absolute" />
 					</div>
 					<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 subscribe-container">
