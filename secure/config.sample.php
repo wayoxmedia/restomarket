@@ -17,7 +17,7 @@ const TEXTO_EMAIL = "";
 
 const TEXTO_TELEFONO = "";
 
-const TEXTO_SU_EMAIL = "";.
+const TEXTO_SU_EMAIL = "";
 
 const META_DESCRIPTION = '';
 
