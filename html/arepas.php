@@ -6,7 +6,7 @@
 			<div class="btn-arepas-container">
 				<h1 class="btn-x-small-red"><?= TEXTO_COMBO?><br><span class="white"><?= TEXTO_AREPAS?></span></h1>
 				<p class="red txt-x-small" style="line-height: 1.2;">
-					Estas arepas se las traen, con los mejores rellenos, tu paladar nunca será el mismo luego de probarlas.
+					<?= PARRAFO_AREPAS?>
 				</p>
 				<input type="button"
 					   value="ORDENA AHORA"

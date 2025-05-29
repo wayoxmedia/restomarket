@@ -36,3 +36,4 @@ const DESCRIPTION_ALMUERZOS = '';
 
 const TEXTO_AREPAS = '';
 const TEXTO_COMBO = '';
+const PARRAFO_AREPAS = '';
