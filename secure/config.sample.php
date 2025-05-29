@@ -35,4 +35,4 @@ const TITLE_ALMUERZOS = '';
 const DESCRIPTION_ALMUERZOS = '';
 
 const TEXTO_AREPAS = '';
-
+const TEXTO_COMBO = '';
