@@ -24,6 +24,7 @@ const TEXTO_SU_EMAIL = "";
 const META_DESCRIPTION = '';
 
 const META_KEYWORDS = '';
+
 const TEXT_WELCOME = '""';
 const TEXT_ESPECIALIDAD = '';
 const TITLE_EMPANADAS = '';
@@ -32,3 +33,7 @@ const TITLE_AREPAS = '';
 const DESCRIPTION_AREPAS = '';
 const TITLE_ALMUERZOS = '';
 const DESCRIPTION_ALMUERZOS = '';
+
+const TEXTO_AREPAS = '';
+const TEXTO_COMBO = '';
+const PARRAFO_AREPAS = '';
