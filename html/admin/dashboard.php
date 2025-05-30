@@ -30,5 +30,6 @@
   </div>
 </div>
 <?php include("foot.php"); ?>
+<script src="../static/admin/js/dashboard.js"></script>
 </body>
 </html>

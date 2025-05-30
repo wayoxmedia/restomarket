@@ -22,10 +22,12 @@
     <div class="body-wrapper-inner">
       <div class="container-fluid">
         <?php include("components/performance.php"); ?>
+        <?php include("admin_footer.php"); ?>
       </div>
     </div>
   </div>
 </div>
 <?php include("foot.php"); ?>
+<script src="../static/admin/js/subscribers.js"></script>
 </body>
 </html>

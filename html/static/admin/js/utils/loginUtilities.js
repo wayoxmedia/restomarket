@@ -87,4 +87,3 @@ export function logout() {
   clearToken();
   window.location.href = '/admin/login.php';
 }
-
