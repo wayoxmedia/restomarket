@@ -1,24 +1,32 @@
+import { msaConfig } from './config.js.php';
+import { hideSpinner, showSpinner } from './global.js';
+
 $(document).ready(function () {
   // Handle form submission
   $('form').on('submit', function (e) {
     e.preventDefault();
 
-    const email = $('#iptEmail').val();
-    const password = $('#iptPassword').val();
+    let email = $('#iptEmail').val();
+    let password = $('#iptPassword').val();
+    let data = JSON.stringify({
+      email: email,
+      password: password
+    });
 
+    let btnSubmit = $('#btnSubmit');
+    btnSubmit.attr('disabled', true); // Disable button to prevent multiple clicks
     $.ajax({
-      url: CONFIG.apiUrl + 'auth/login',
+      url: msaConfig.apiUrl + 'auth/login?XDEBUG_SESSION=PHPSTORM',
       method: 'POST',
       contentType: 'application/json',
       dataType: 'json',
-      data: JSON.stringify({
-        email,
-        password,
-      }),
+      data: data,
       beforeSend: function () {
         $('#login-error').remove(); // elimina mensaje previo, si existe.
+        showSpinner();
       },
       success: function (res) {
+        hideSpinner();
         // Save token in localStorage
         // TODO: rename to 'token_XXX' (the store name or id) using a var from config.
         localStorage.setItem('token', res['access_token']);
@@ -27,31 +35,14 @@ $(document).ready(function () {
         window.location.href = 'dashboard.php'; // Redirect OK.
       },
       error: function (xhr) {
-        console.error('❌ Error de login:', xhr);
+        hideSpinner();
+        console.log('❌ Error de login:', xhr);
         $('form').after(
           `<div id="login-error" style="color: red; margin-top: 1em;">
            ${xhr['responseJSON']?.error || 'Error al iniciar sesión. Verifica tus credenciales.'}
          </div>`
         );
-      }
-    });
-  });
-
-  $('#btnLogout').on('click', function () {
-    $.ajax({
-      url: CONFIG.apiUrl + 'auth/logout',
-      method: 'POST',
-      headers: {
-        'Accept': 'application/json',
-        'Authorization': 'Bearer ' + localStorage.getItem('token')
-      },
-      success: function () {
-        localStorage.removeItem('token');
-        alert('Sesión cerrada');
-        // Redirigir o limpiar UI
-      },
-      error: function () {
-        alert('Error al cerrar sesión');
+        btnSubmit.attr('disabled', false); // Re-enable button on error.
       }
     });
   });

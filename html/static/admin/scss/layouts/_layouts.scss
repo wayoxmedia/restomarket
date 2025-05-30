@@ -24,7 +24,7 @@ body {
     max-width: vars.$boxed-width;
     margin: 0 auto;
     transition: 0.2s ease-in;
-    padding: 180px vars.$grid-gutter-width vars.$grid-gutter-width;
+    padding: 100px vars.$grid-gutter-width vars.$grid-gutter-width;
 
     @include media-breakpoint-down(lg){
       padding-top: 230px;

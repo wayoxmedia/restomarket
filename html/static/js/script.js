@@ -138,7 +138,7 @@ $(function(){
 		let formData = new FormData(this);
 
 		$.ajax({
-			url:  CONFIG.apiUrl + 'contact-form',
+			url:  msaConfig.apiUrl + 'contact-form',
 			type: 'POST',
 			data: formData,
 			processData: false,
@@ -150,13 +150,13 @@ $(function(){
 				$contactFormResponse.removeClass('hidden');
 				$contactFormResponse.addClass('alert-success');
 				$contactFormResponse.html("Su mensaje ha sido enviado, pronto nos pondremos en contacto con usted.");
-				if (CONFIG.LOCAL_ENV) console.log('Data: ', data);
+				if (msaConfig.LOCAL_ENV) console.log('Data: ', data);
 			},
 			error: function(xhr) {
 				$contactFormResponse.removeClass('hidden');
 				$contactFormResponse.addClass('alert-danger');
 				$contactFormResponse.html(processAjaxErrors(xhr));
-				if (CONFIG.LOCAL_ENV) console.log('Request failed', xhr);
+				if (msaConfig.LOCAL_ENV) console.log('Request failed', xhr);
 			}
 		});
 	});
@@ -217,7 +217,7 @@ $(function(){
 		let formData = new FormData(this);
 
 		$.ajax({
-			url:  CONFIG.apiUrl + 'subscribe-form',
+			url:  msaConfig.apiUrl + 'subscribe-form',
 			type: 'POST',
 			data: formData,
 			processData: false,
@@ -229,13 +229,13 @@ $(function(){
 				$submitFormResponse.removeClass('hidden');
 				$submitFormResponse.addClass('alert-success');
 				$submitFormResponse.html("Su subscripción ha sido recibida.");
-				if (CONFIG.LOCAL_ENV) console.log('Data: ', data);
+				if (msaConfig.LOCAL_ENV) console.log('Data: ', data);
 			},
 			error: function(xhr) {
 				$submitFormResponse.removeClass('hidden');
 				$submitFormResponse.addClass('alert-danger');
 				$submitFormResponse.html(processAjaxErrors(xhr));
-				if (CONFIG.LOCAL_ENV) console.log('Request failed', xhr);
+				if (msaConfig.LOCAL_ENV) console.log('Request failed', xhr);
 			},
 			complete: function() {
 				// Re-enable the submit button after the request is complete.
@@ -302,7 +302,7 @@ $(function(){
 					errorMsg = 'Por favor revise el siguiente error: <br>';
 				}
 				errorMsg += errorList.flat().join('<br>');
-				if (CONFIG.LOCAL_ENV) console.log('Errors: ', JSON.stringify(xhr.responseJSON.errors));
+				if (msaConfig.LOCAL_ENV) console.log('Errors: ', JSON.stringify(xhr.responseJSON.errors));
 			} else if (xhr.responseJSON.message) {
 				errorMsg = xhr.responseJSON.message;
 			}

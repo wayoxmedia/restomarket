@@ -1,84 +1,57 @@
-$(document).ready(function () {
-  /***********
-   * Variables
-   **********/
-  let token = localStorage.getItem('token');
-  let expiresAfter = parseInt(localStorage.getItem('token_expires_at'), 10) || 0;
+import { msaConfig } from './config.js.php';
+import { checkIfLoggedIn, clearToken, logout, refreshIfNearExpiry } from './utils/loginUtilities.js';
+import {hideSpinner, showSpinner} from "./global.js";
 
-  /************
-   * Functions
-   ***********/
-
-  /**
-   * Check if the user is logged in
-   */
-  function isLoggedIn() {
-    return token !== null && token !== undefined;
+/**
+ * On Document Ready,
+ * asynchronously check if the user is logged in
+ * and add events to the logout button.
+ */
+document.addEventListener('DOMContentLoaded', async function () {
+  const token = localStorage.getItem('token');
+  const logoutBtn = document.getElementById('logout');
+  const stillValid = await checkIfLoggedIn(token);
+  if (!stillValid) {
+    logout();
+    return;
+  }
+  else {
+    await refreshIfNearExpiry(token);
+    if (window.fromIndex) {
+      // if coming from admin/index.php, redirect to dashboard page.
+      window.location.href = '/admin/dashboard.php';
+    } // else, do nothing, just show the requested page.
   }
 
-  /**
-   * Check if the token is expired
-   */
-  function isTokenExpired() {
-    return Date.now() > expiresAfter;
-  }
+  if (logoutBtn) {
+    logoutBtn.addEventListener('click', async function () {
+      const url = msaConfig.apiUrl + '/auth/logout';
+      const lastToken = localStorage.getItem('token');
+      showSpinner();
 
-  /**
-   * Check if the user is already logged in.
-   *
-   * If the user is not logged in or the token has expired,
-   * clean the localStorage items and redirect to login page.
-   */
-  function checkIfLoggedIn(fromIndex) {
-    if (!isLoggedIn() || isTokenExpired()) {
-      // No token or expired, cleanup and redirect to login page.
-      localStorage.removeItem('token');
-      localStorage.removeItem('token_expires_at');
-      window.location.href = '/admin/login.php';
-    }
-    else {
-      // If the user is logged in, refresh the token
-      refreshToken();
-      // redirect to dashboard page if coming from admin/index.php.
-      if (fromIndex) {
-        window.location.href = '/admin/dashboard.php';
-      } // else, do nothing, just show the requested page.
-    }
-  }
+      try {
+        const response = await fetch(url, {
+          method: 'POST',
+          headers: {
+            'Authorization': 'Bearer ' + lastToken
+          }
+        });
 
-  /**
-   * Set the token in localStorage.
-   * @param newToken
-   */
-  function setToken(newToken) {
-    token = newToken['access_token'];
-    localStorage.setItem('token', token);
-    let in30Mins = Date.now() + newToken['expires_in'] * 1000;
-    localStorage.setItem('token_expires_at', in30Mins.toString());
-  }
-
-  /**
-   * Refresh the token.
-   */
-  function refreshToken() {
-    if (!token) return;
-
-    $.ajax({
-      url: CONFIG.apiUrl + 'auth/refresh',
-      method: 'POST',
-      headers: {
-        'Authorization': 'Bearer ' + token
-      },
-      success: function (response) {
-        setToken(response);
-      },
-      error: function (xhr) {
-        console.warn("Token invalid or expired");
-        console.log(xhr);
-        //logout();
+        if (!response.ok) {
+          console.log('Error en logout:', response.status);
+        }
+        else {
+          console.log('Logout exitoso');
+        }
+      }
+      catch (error) {
+        console.error('Fallo de red en logout:', error);
+      }
+      finally {
+        clearToken();
+        hideSpinner();
+        logout();
       }
     });
   }
-
-  checkIfLoggedIn(window.fromIndex);
 });
