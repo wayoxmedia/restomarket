@@ -24,7 +24,6 @@
 		</div>
 	</div>
 	<form class="" id="contact_form">
-		<input type="hidden" name="XDEBUG_TRIGGER" id="XDEBUG_TRIGGER" value="PHPSTORM">
 		<div class="row bgRed">
 			<p> </p>
 			<div class="col-xs-12 col-sm-1 col-md-1 col-lg-1"></div>
