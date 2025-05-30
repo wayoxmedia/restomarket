@@ -20,7 +20,7 @@
 					  data-wow-delay="1s"><?= TEXTO_SUBSCRIBE?></span>
 			</h2>
 			<div class="section-info col-md-8 col-md-offset-2 text-center wow fadeInDown">
-				<h3 class="sub-title-lg red"><?= TEXTO_SUBSCRIBE_PARRAFO?></h3>
+				<h3 class="sub-title-lg red"><?= SUPPORT_EMAIL ?> - <?= TEXTO_SUBSCRIBE_PARRAFO?></h3>
 			</div>
 		</div>
 	</div>

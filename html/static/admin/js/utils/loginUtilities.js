@@ -1,10 +1,11 @@
-import { CONFIG } from '../config.js.php';
+import {msaConfig} from '../config.js.php';
+import {hideSpinner, showSpinner} from '../global.js';
 
 /**
  * Check if the user is logged in
  */
 export function isLoggedIn(token) {
-  return token !== null && token !== undefined;
+  return !!token;
 }
 
 /**
@@ -21,18 +22,15 @@ export function isTokenExpired() {
  * If the user is not logged in or the token has expired,
  * clean the localStorage items and redirect to login page.
  */
-export function checkIfLoggedIn(fromIndex, token) {
+export async function checkIfLoggedIn(token) {
   if (!isLoggedIn(token) || isTokenExpired()) {
-    // No token or expired, cleanup and redirect to login page.
+    // No token or expired, cleanup and logout (redirect to login page).
+    clearToken();
     logout();
   }
   else {
     // If the user is logged in, refresh the token
-    refreshToken(token);
-    // redirect to dashboard page if coming from admin/index.php.
-    if (fromIndex) {
-      window.location.href = '/admin/dashboard.php';
-    } // else, do nothing, just show the requested page.
+    return true;
   }
 }
 
@@ -43,32 +41,63 @@ export function checkIfLoggedIn(fromIndex, token) {
 export function setToken(newToken) {
   let refreshedToken = newToken['access_token'];
   localStorage.setItem('token', refreshedToken);
-  let in30Mins = Date.now() + newToken['expires_in'] * 1000;
-  localStorage.setItem('token_expires_at', in30Mins.toString());
+  let xMins = Date.now() + newToken['expires_in'] * 1000;
+  localStorage.setItem('token_expires_at', xMins.toString());
 }
 
 /**
  * Refresh the token.
+ * @param token
+ * @return {Promise<boolean>} Returns true if the token was refreshed successfully, false otherwise.
  */
-export function refreshToken(token) {
-  if (!token) return;
+export async function refreshToken(token) {
+  if (!token) {
+    console.warn('No token provided for refresh');
+    clearToken();
+    return false;
+  }
 
-  $.ajax({
-    url: CONFIG.apiUrl + 'auth/refresh',
-    method: 'POST',
-    headers: {
-      'Authorization': 'Bearer ' + token
-    },
-    success: function (response) {
-      setToken(response);
-    },
-    error: function (xhr) {
-      console.warn("Token invalid or expired");
-      console.log(xhr);
-      clearToken()
-      logout();
+  showSpinner();
+
+  try {
+    const response = await fetch(msaConfig.apiUrl + 'auth/refresh', {
+      method: 'POST',
+      headers: {
+        'Authorization': 'Bearer ' + token
+      }
+    });
+
+    if (!response.ok) {
+      throw new Error('Token inválido o expirado');
     }
-  });
+
+    const data = await response.json();
+    setToken(data);
+    return true;
+  }
+  catch (error) {
+    console.warn('Error refrescando token:', error);
+    clearToken();
+    logout();
+    return false;
+  }
+  finally {
+    hideSpinner();
+  }
+}
+
+/**
+ * If the token expires in less than 5 minutes, try refreshing.
+ */
+export function refreshIfNearExpiry(token) {
+  const expiresAt = parseInt(localStorage.getItem('token_expires_at'), 10);
+  const fiveMinutesFromNow = Date.now() + 5 * 60 * 1000;
+
+  if (expiresAt && expiresAt <= fiveMinutesFromNow) {
+    return refreshToken(token);
+  }
+
+  return Promise.resolve(true); // No need to refresh.
 }
 
 /**
@@ -83,7 +112,5 @@ export function clearToken() {
  * Logout the user by clearing the token and redirecting to the login page.
  */
 export function logout() {
-  // Clear the token and redirect to login page
-  clearToken();
   window.location.href = '/admin/login.php';
 }

@@ -1,4 +1,6 @@
-import { CONFIG } from './config.js.php';
+import { msaConfig } from './config.js.php';
+import { hideSpinner, showSpinner } from './global.js';
+
 $(document).ready(function () {
   // Handle form submission
   $('form').on('submit', function (e) {
@@ -14,15 +16,17 @@ $(document).ready(function () {
     let btnSubmit = $('#btnSubmit');
     btnSubmit.attr('disabled', true); // Disable button to prevent multiple clicks
     $.ajax({
-      url: CONFIG.apiUrl + 'auth/login?XDEBUG_SESSION=PHPSTORM',
+      url: msaConfig.apiUrl + 'auth/login?XDEBUG_SESSION=PHPSTORM',
       method: 'POST',
       contentType: 'application/json',
       dataType: 'json',
       data: data,
       beforeSend: function () {
         $('#login-error').remove(); // elimina mensaje previo, si existe.
+        showSpinner();
       },
       success: function (res) {
+        hideSpinner();
         // Save token in localStorage
         // TODO: rename to 'token_XXX' (the store name or id) using a var from config.
         localStorage.setItem('token', res['access_token']);
@@ -31,6 +35,7 @@ $(document).ready(function () {
         window.location.href = 'dashboard.php'; // Redirect OK.
       },
       error: function (xhr) {
+        hideSpinner();
         console.log('❌ Error de login:', xhr);
         $('form').after(
           `<div id="login-error" style="color: red; margin-top: 1em;">

@@ -1,5 +1,5 @@
 <script>
-  const CONFIG = {
+  const msaConfig = {
     siteName: <?= json_encode(defined('SITE_NAME') ? SITE_NAME : '') ?>,
     supportEmail: <?= json_encode(defined('SUPPORT_EMAIL') ? SUPPORT_EMAIL : '') ?>,
     apiUrl: <?= json_encode(defined('API_URL') ? API_URL : '') ?>,

@@ -28,6 +28,6 @@
   </div>
 </div>
 <?php include("foot.php"); ?>
-<script src="../static/admin/js/subscribers.js"></script>
+<script type="module" src="../static/admin/js/subscribers.js"></script>
 </body>
 </html>
