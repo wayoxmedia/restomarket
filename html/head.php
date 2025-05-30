@@ -1,8 +1,8 @@
 <head>
 <meta charset="utf-8">
 <title><?= SITE_NAME?></title>
-<meta name="description" content="Comida Venezolana en Chicago, hecha en casa y con el sabor de la abuela.">
-<meta name="keywords" content="Comida Venezolana, Eglee's Gourmet, Arepas, Empanadas, Almuerzos, Chicago">
+<meta name="description" content="<?= META_DESCRIPTION?>">
+<meta name="keywords" content="<?= META_KEYWORDS?>">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 <!-- favicon -->
@@ -10,7 +10,7 @@
 <link rel="icon" type="image/svg+xml" href="favicon.svg" />
 <link rel="shortcut icon" href="favicon.ico" />
 <link rel="apple-touch-icon" sizes="180x180" href="static/img/apple-touch-icon.png" />
-<meta name="apple-mobile-web-app-title" content="Eglee's Gourmet" />
+<meta name="apple-mobile-web-app-title" content="<?= SITE_NAME?>" />
 
 <!-- google fonts -->
 <link href='https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800,900%7CMerriweather:400,400italic,300,300italic,700,700italic'

@@ -7,10 +7,10 @@
 			<h2 class="section-title text-center">
 				<span class="section-title-border wow pulse red"
 					  data-wow-duration="1s"
-					  data-wow-delay="1s">NUESTRA ESPECIALIDAD</span>
+					  data-wow-delay="1s"><?= TEXT_ESPECIALIDAD?></span>
 			</h2>
 			<div class="section-info col-md-10 col-md-offset-1 text-center wow fadeInDown">
-				<h3 class="sub-title-lg red">"Del&eacute;itate con el aut&eacute;ntico sabor de Venezuela<br />en cada bocado"</h3>
+				<h3 class="sub-title-lg red"><?= TEXT_WELCOME?></h3>
 			</div>
 		</div>
 	</div>
@@ -22,27 +22,26 @@
 					 data-wow-delay="0.5s">
 					<div class="circle-point"></div>
 					<div class="post-list post-thinkers">
-						<img src="static/img/empanada.png" alt="empanadas" class="img-responsive image-centered" />
-						<h2 class="single-title red">Empanadas</h2>
-						<p>La masa m&aacute;s crujiente con los sabores &uacute;nicos de nuestra tierra.</p>
+						<img src="static/img/empanada.png" alt="<?= TITLE_EMPANADAS?>" class="img-responsive image-centered" />
+						<h2 class="single-title red"><?= TITLE_EMPANADAS?></h2>
+						<p><?= DESCRIPTION_EMPANADAS?></p>
 					</div>
 				</div>
 				<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 listing-wrapper wow fadeInLeft animated"
 					 data-wow-delay="1s">
 					<div class="circle-point"></div>
 					<div class="post-list post-dremers">
-						<img src="static/img/arepa.png" alt="arepas" class="img-responsive image-centered" />
-						<h2 class="single-title red">AREPAS</h2>
-						<p>La que nunca puede faltar en las mesas de nuestra gastronom&iacute;a.</p>
+						<img src="static/img/arepa.png" alt="<?= TITLE_AREPAS?>" class="img-responsive image-centered" />
+						<h2 class="single-title red"><?= TITLE_AREPAS?></h2>
+						<p><?= DESCRIPTION_AREPAS?></p>
 					</div>
 				</div>
 				<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 listing-wrapper-last wow fadeInLeft animated"
 					 data-wow-delay="1.5s">
 					<div class="post-list post-researchers">
-						<img src="static/img/almuerzos.png" alt="almuerzos" class="img-responsive image-centered" />
-						<h2 class="single-title red">Almuerzos</h2>
-						<p>Degusta de los platos m&aacute;s aut&eacute;nticos
-							con la saz&oacute;n de la se&ntilde;ora de la casa.</p>
+						<img src="static/img/almuerzos.png" alt="<?= TITLE_ALMUERZOS?>" class="img-responsive image-centered" />
+						<h2 class="single-title red"><?= TITLE_ALMUERZOS?></h2>
+						<p><?= DESCRIPTION_ALMUERZOS?></p>
 					</div>
 				</div>
 			</div>
