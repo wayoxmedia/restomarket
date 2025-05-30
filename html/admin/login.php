@@ -21,8 +21,7 @@
           integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
           crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
-  <?php include ("../../secure/config_js.php"); ?>
-  <script src="../static/admin/js/login.js"></script>
+  <script type="module" src="../static/admin/js/login.js"></script>
 </head>
 
 <body>
@@ -46,7 +45,6 @@
               </a>
               <p class="text-center"><?= SITE_NAME ?></p>
               <form id="loginForm">
-                <input type="hidden" name="XDEBUG_TRIGGER" id="XDEBUG_TRIGGER" value="PHPSTORM">
                 <div class="mb-3">
                   <label for="iptEmail"
                          class="form-label">Email</label>
@@ -80,6 +78,7 @@
                      href="forgot.php">Forgot Password?</a>
                 </div>
                 <button type="submit"
+                        id="btnSubmit"
                         class="btn btn-primary w-100 py-8 fs-4 mb-4 rounded-2">Sign In</button>
               </form>
             </div>
