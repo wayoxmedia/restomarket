@@ -4,16 +4,16 @@
       <div class="card-body">
         <div class="d-md-flex align-items-center">
           <div>
-            <h4 class="card-title">Products Performance</h4>
+            <h4 class="card-title">Subscribers</h4>
             <p class="card-subtitle">
-              Ample Admin Vs Pixel Admin
+              <?= SITE_NAME ?> subscribers list with details.
             </p>
           </div>
           <div class="ms-auto mt-3 mt-md-0">
             <select class="form-select theme-select border-0" aria-label="Default select example">
-              <option value="1">March 2025</option>
-              <option value="2">March 2025</option>
-              <option value="3">March 2025</option>
+              <option value="1">All</option>
+              <option value="2">Email</option>
+              <option value="3">Teléfono</option>
             </select>
           </div>
         </div>

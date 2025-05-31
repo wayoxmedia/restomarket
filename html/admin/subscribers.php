@@ -21,7 +21,7 @@
     <?php include("admin_header.php"); ?>
     <div class="body-wrapper-inner">
       <div class="container-fluid">
-        <?php include("components/performance.php"); ?>
+        <?php include("components/subscribers_table.php"); ?>
         <?php include("admin_footer.php"); ?>
       </div>
     </div>
