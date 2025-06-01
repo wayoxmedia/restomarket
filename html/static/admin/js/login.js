@@ -24,6 +24,7 @@ $(document).ready(function () {
       beforeSend: function () {
         $('#login-error').remove(); // elimina mensaje previo, si existe.
         showSpinner();
+        btnSubmit.text('Logging in...');
       },
       success: function (res) {
         hideSpinner();
@@ -36,6 +37,7 @@ $(document).ready(function () {
       },
       error: function (xhr) {
         hideSpinner();
+        btnSubmit.text('Sign In');
         console.log('❌ Error de login:', xhr);
         $('form').after(
           `<div id="login-error" style="color: red; margin-top: 1em;">

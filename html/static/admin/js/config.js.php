@@ -4,6 +4,7 @@
 ?>
 export const msaConfig = {
   siteName: <?= json_encode(defined('SITE_NAME') ? SITE_NAME : '') ?>,
+  siteCodeName: <?= json_encode(defined('SITE_CODE_NAME') ? SITE_CODE_NAME : '') ?>,
   siteAdminUrl: <?= json_encode(defined('SITE_ADMIN_URL') ? SITE_ADMIN_URL : '') ?>,
   supportEmail: <?= json_encode(defined('SUPPORT_EMAIL') ? SUPPORT_EMAIL : '') ?>,
   apiUrl: <?= json_encode(defined('API_URL') ? API_URL : '') ?>,
