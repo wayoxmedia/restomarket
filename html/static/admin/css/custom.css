@@ -43,3 +43,19 @@
   font-weight: bold;
   margin-bottom: 0 !important;
 }
+
+.m-2-no-left {
+  margin-top: .5rem;
+  margin-right: .5rem;
+  margin-bottom: .5rem;
+}
+
+.dt-paging-button {
+  padding: 0 !important;
+  margin-left: 0 !important;
+}
+
+.dt-paging-button:hover {
+  border: 1px solid transparent !important;
+  background: transparent !important;
+}
