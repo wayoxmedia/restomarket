@@ -16,7 +16,7 @@ $(document).ready(function () {
     let btnSubmit = $('#btnSubmit');
     btnSubmit.attr('disabled', true); // Disable button to prevent multiple clicks
     $.ajax({
-      url: msaConfig.apiUrl + 'auth/login',
+      url: msaConfig.apiUrl + '/auth/login',
       method: 'POST',
       contentType: 'application/json',
       dataType: 'json',
