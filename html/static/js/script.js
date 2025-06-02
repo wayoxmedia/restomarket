@@ -138,7 +138,7 @@ $(function(){
 		let formData = new FormData(this);
 
 		$.ajax({
-			url:  msaConfig.apiUrl + 'contact-form',
+			url:  msaConfig.apiUrl + '/contact-form',
 			type: 'POST',
 			data: formData,
 			processData: false,
@@ -217,7 +217,7 @@ $(function(){
 		let formData = new FormData(this);
 
 		$.ajax({
-			url:  msaConfig.apiUrl + 'subscribe-form',
+			url:  msaConfig.apiUrl + '/subscribe-form',
 			type: 'POST',
 			data: formData,
 			processData: false,

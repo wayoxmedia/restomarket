@@ -60,7 +60,7 @@ export async function refreshToken(token) {
   showSpinner();
 
   try {
-    const response = await fetch(msaConfig.apiUrl + 'auth/refresh', {
+    const response = await fetch(msaConfig.apiUrl + '/auth/refresh', {
       method: 'POST',
       headers: {
         'Authorization': 'Bearer ' + token
