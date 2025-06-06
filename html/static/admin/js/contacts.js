@@ -1,33 +1,22 @@
 import * as gbl from "./global.js";
-import { msaConfig } from "./config.js.php";
+import {msaConfig} from "./config.js.php";
 
 $(document).ready(function () {
   async function initializeDataTable() {
     gbl.showSpinner();
     // Get data
-    const dataResponse = await fetch(msaConfig.apiUrl + "/subscribers");
+    const dataResponse = await fetch(msaConfig.apiUrl + "/contacts");
     const data = await dataResponse.json();
 
     // Associate records with geolocations
     data.data = gbl.processGeolocationData(data.data);
 
-    new DataTable('#subscribers_list', {
+    new DataTable('#contacts_list', {
       data: data.data,
       columns: [
-        {data: 'address'},
-        {
-          data: 'address_type',
-          render: function (data) {
-            if (data === 'e') {
-              return 'Email';
-            } else if (data === 'p') {
-              return 'Telephone';
-            } else {
-              return 'Unknown "' + data + '"';
-            }
-          }
-        },
-        {data: 'user_ip'},
+        {data: 'name'},
+        {data: 'email'},
+        {data: 'message'},
         {data: 'geoData'},
       ],
       layout: {
@@ -68,12 +57,10 @@ $(document).ready(function () {
                 $(node).removeClass('dt-button buttons-csv buttons-html5');
                 $(node).attr('id', 'csvButton');
               },
-              title: gbl.reportFilename('SubscribersList', dayjs().format('YYYY-MM-DD'), null, null),
+              title: gbl.reportFilename('ContactsList', dayjs().format('YYYY-MM-DD'), null, null),
               customize: function (csv) {
-                const type = document.getElementById('selSubscriptionType').value;
                 let csvHeader = "Store: " + msaConfig.siteName + "\n" +
-                  "Subscribers List\n" +
-                  "For Subscription Type: " + type + "\n" +
+                  "Contacts List\n" +
                   "For Date: " + dayjs().format('YYYY-MM-DD') + "\n\n";
                 return csvHeader + csv;
               }
@@ -117,7 +104,7 @@ $(document).ready(function () {
 
   initializeDataTable()
   .then(() => {
-    console.log("Subscribers DataTable initialized successfully.");
+    console.log("Contacts DataTable initialized successfully.");
   })
   .catch(e => {
     console.log("Error initializing DataTable:", e);

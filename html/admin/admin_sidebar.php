@@ -213,7 +213,7 @@
       </li>
       <li class="sidebar-item">
         <a class="sidebar-link justify-content-between"
-           href="subscribers.php" aria-expanded="false">
+           href="<?= SITE_ADMIN_URL?>subscribers.php" aria-expanded="false">
           <div class="d-flex align-items-center gap-3">
             <span class="d-flex">
               <i class="ti ti-user-plus"></i>
@@ -224,7 +224,7 @@
       </li>
       <li class="sidebar-item">
         <a class="sidebar-link justify-content-between"
-           href="#" aria-expanded="false">
+           href="<?= SITE_ADMIN_URL?>contacts.php" aria-expanded="false">
           <div class="d-flex align-items-center gap-3">
             <span class="d-flex">
               <i class="ti ti-mail"></i>

@@ -55,3 +55,27 @@ export function reportFilename(type = "report", startDate = null, endDate = null
 export function isNUE(item) {
   return item === null || item === undefined || item === '';
 }
+
+/**
+ * Process geolocation data for each record in the provided item array.
+ * @param item
+ * @returns {*}
+ */
+export function processGeolocationData(item) {
+  item.forEach((record, index) => {
+    let geoData;
+    try {
+      geoData = JSON.parse(record['geo_location']);
+    }
+    catch (error) {
+      console.log(`Error parsing geoLocation for record at index ${index}:`, error);
+      geoData = null;
+    }
+    geoData = isNUE(geoData)
+      ? 'No GeoLocation'
+      : `${geoData['city'] || 'No City'}, ${geoData['regionName'] || 'No Region'}, ${geoData['country'] || 'No Country'}`;
+    record.geoData = geoData;
+  });
+
+  return item;
+}
