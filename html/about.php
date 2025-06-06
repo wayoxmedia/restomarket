@@ -31,8 +31,8 @@
 					 data-wow-delay="1s">
 					<div class="circle-point"></div>
 					<div class="post-list post-dremers">
-						<img src="static/img/arepa.png" alt="<?= TITLE_AREPAS?>" class="img-responsive image-centered" />
-						<h2 class="single-title red"><?= TITLE_AREPAS?></h2>
+						<img src="static/img/arepa.png" alt="<?= TEXTO_AREPAS?>" class="img-responsive image-centered" />
+						<h2 class="single-title red"><?= TEXTO_AREPAS?></h2>
 						<p><?= DESCRIPTION_AREPAS?></p>
 					</div>
 				</div>
