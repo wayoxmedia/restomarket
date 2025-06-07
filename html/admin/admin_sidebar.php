@@ -229,7 +229,7 @@
             <span class="d-flex">
               <i class="ti ti-mail"></i>
             </span>
-            <span class="hide-menu">Contacts Messages</span>
+            <span class="hide-menu">Contact Messages</span>
           </div>
         </a>
       </li>

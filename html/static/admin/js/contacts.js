@@ -57,10 +57,10 @@ $(document).ready(function () {
                 $(node).removeClass('dt-button buttons-csv buttons-html5');
                 $(node).attr('id', 'csvButton');
               },
-              title: gbl.reportFilename('ContactsList', dayjs().format('YYYY-MM-DD'), null, null),
+              title: gbl.reportFilename('ContactMessages', dayjs().format('YYYY-MM-DD'), null, null),
               customize: function (csv) {
                 let csvHeader = "Store: " + msaConfig.siteName + "\n" +
-                  "Contacts List\n" +
+                  "Contact Messages\n" +
                   "For Date: " + dayjs().format('YYYY-MM-DD') + "\n\n";
                 return csvHeader + csv;
               }
