@@ -1,7 +1,12 @@
 <?php require_once("../../secure/config.php"); ?>
 <!DOCTYPE html>
 <html lang="en">
-<?php include("head.php"); ?>
+<?php
+$variables = [
+  'title' => 'Subscribers'
+];
+extract($variables);
+include("head.php"); ?>
 <body>
 <!--  Body Wrapper -->
 <div class="page-wrapper"

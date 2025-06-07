@@ -4,9 +4,9 @@
       <div class="card-body">
         <div class="d-md-flex align-items-center">
           <div>
-            <h4 class="card-title">Contacts</h4>
+            <h4 class="card-title">Contact Messages</h4>
             <p class="card-subtitle">
-              <?= SITE_NAME ?> contacts list with details.
+              <?= SITE_NAME ?> contact messages with details.
             </p>
           </div>
         </div>
