@@ -9,7 +9,7 @@ $(document).ready(function () {
     const data = await dataResponse.json();
 
     // Associate records with geolocations
-    data.data = gbl.processGeolocationData(data.data);
+    data.data = gbl.processGeolocationDataFromArrayOfItems(data.data, 'geo_location');
 
     new DataTable('#contacts_list', {
       data: data.data,
