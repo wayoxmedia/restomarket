@@ -17,7 +17,7 @@ secure/*
 *.stTheme.cache
 *.sublime-workspace
 *.sublime-project
-EgleesGourmet.code-workspace
+template1.code-workspace
 
 ########################
 ### COMPOSER

@@ -1,7 +1,7 @@
-# PHP LAMP FOR DOCKER
-A simple Docker container to run php + Apache
+# TEMPLATE 1 - PHP + APACHE
+A simple Docker container to run php + Apache with some useful tools like composer, nodejs, npm, yarn, git, ssh and more. Used to build Template1.
 
-## PreRequisites
+## Pre-Requisites
 
 * git
 * ssh
@@ -26,7 +26,7 @@ You must have Docker installed and running properly.
 clone this repo using git
 
 ```sh
-git clone git@github.com:wayoxmedia/template1.git template1
+git clone git@github.com:wayoxmedia/template1.git
 ```
 
 cd into your app
