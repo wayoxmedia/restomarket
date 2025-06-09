@@ -1,7 +1,7 @@
-# PHP LAMP FOR DOCKER
-A simple Docker container to run php + Apache
+# TEMPLATE 1 - PHP + APACHE
+A simple Docker container to run php + Apache with some useful tools like composer, nodejs, npm, yarn, git, ssh and more. Used to build Template1.
 
-## PreRequisites
+## Pre-Requisites
 
 * git
 * ssh
@@ -14,9 +14,10 @@ A simple Docker container to run php + Apache
 You should have already a folder structure like this:
 
     YourDevFolder
-    |- EgleesGourmet     <- This repo
+    |- template1     <- This repo
     |- orchestration
-    |- myStoreAdmin
+    |- dataserver
+    |- myStorePanel
 
 ### Getting Started
 
@@ -25,13 +26,13 @@ You must have Docker installed and running properly.
 clone this repo using git
 
 ```sh
-git clone git@github.com:wayoxmedia/restomarket.git EgleesGourmet
+git clone git@github.com:wayoxmedia/template1.git
 ```
 
 cd into your app
 
 ```sh
-cd EgleesGourmet
+cd template1
 ```
 
 get a copy of the actual .env file from admins or create your own .env file and edit some values.
@@ -71,9 +72,14 @@ docker ps
 Now you can access your container using SSH.
 
 ```sh
-docker exec -it eglee bash
+docker exec -it template1 bash
 ```
-This will give you a shell inside the container. Make sure you are in the html folder, this is where the FrontEnd (web & admin) code is located and the package.json file lives here.
+This step above will give you a shell inside the container.
+
+Now, make sure you are in the html folder, this is where the FrontEnd (website) code is located and the package.json file lives here.
+```sh
+cd html
+```
 You can also access the container using SSH with your IDE.
 If you are using Visual Studio Code, you can use the Remote - SSH extension to connect to the container.
 
@@ -112,7 +118,7 @@ Open [SystemRoot]\system32\drivers\etc\hosts and edit the file with your text ed
 ```
 Add the following lines at the end of this hosts file
 ```
-127.0.0.1     eglee.test
+127.0.0.1     template1.test
 ```
 MacOS & Linux: 'Ctrl+O' then 'y' to save and 'Ctrl+X' to quit nano.
 PC: Save and quit your editor.
@@ -121,9 +127,9 @@ After these steps, you may need to flush your dns.
 
 Navigate with your browser to the site
 
-`http://eglee.test`
+`http://template1.test`
 
-If this URL doesn't work, replace `eglee.test` with localhost or 127.0.0.1
+If this URL doesn't work, replace `template1.test` with localhost or 127.0.0.1
 
 Check it is properly working.
 
@@ -135,4 +141,3 @@ Check it is properly working.
 * Use the Docker extension to manage your containers, images, volumes, networks and containers.
 
 Happy coding!
-

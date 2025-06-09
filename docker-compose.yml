@@ -1,7 +1,7 @@
 services:
   php-apache-environment:
-    image: eglee:1.0.0
-    container_name: eglee
+    image: template1:1.0.0
+    container_name: template1
     build:
       context: ./
       dockerfile: docker/Dockerfile
