@@ -76,10 +76,6 @@ docker exec -it template1 bash
 ```
 This step above will give you a shell inside the container.
 
-Now, make sure you are in the html folder, this is where the FrontEnd (website) code is located and the package.json file lives here.
-```sh
-cd html
-```
 You can also access the container using SSH with your IDE.
 If you are using Visual Studio Code, you can use the Remote - SSH extension to connect to the container.
 
@@ -90,6 +86,7 @@ npm install
 ```
 This will install all the dependencies needed for the FrontEnd, the folder node_modules will be created.
 
+## OPTIONAL, ask for instructions to your admins or jump to section `Updating your hosts file`
 ### Compile SASS
 Some base CSS code is already included in the project, but you may want to add your own styles. Please don't modify the base SCSS files, instead create your own SCSS files and import them into the main SCSS file or use the custom.css file.
 ```sh
