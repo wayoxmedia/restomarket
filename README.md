@@ -1,5 +1,5 @@
 # TEMPLATE 1 - PHP + APACHE
-A simple Docker container to run php + Apache with some useful tools like composer, nodejs, npm, yarn, git, ssh and more. Used to build Template1.
+A simple Docker container to run php + Apache with some useful tools like composer, Node.js, npm, yarn, git, ssh and more. Used to build Template1.
 
 ## Pre-Requisites
 
@@ -16,8 +16,7 @@ You should have already a folder structure like this:
     YourDevFolder
     |- template1     <- This repo
     |- orchestration
-    |- dataserver
-    |- myStorePanel
+    |- deepdevs
 
 ### Getting Started
 
